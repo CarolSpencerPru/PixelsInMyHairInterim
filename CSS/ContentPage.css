@@ -1,0 +1,197 @@
+/*ContentPage.css*/
+
+* {
+	margin: 0;
+	font-size: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	background-image: url(../Images/TallGrass.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Poiret One', cursive;
+/*	color: white;*/
+}
+
+header {
+	width: 100%;
+	margin-top: 0px;
+}
+
+header h1 a {
+	position: fixed;
+	top: 100px;
+	left: 0px;
+	width: 25%;
+	padding-left: 2%;
+	text-decoration: none;
+	font-size: 75px;
+	color: white;
+	font-weight: 100;
+	text-shadow: 3px 2px 3px black;
+	z-index: 10;
+/*	border: 1px solid white;*/
+}
+
+#navButtonBar {
+	position: fixed;
+	background: linear-gradient(180deg, #1b3808 50%, transparent);
+	top: 0px;
+	width: 100%;
+	min-width: 280px;
+	z-index: 1000;
+/*	border: 1px solid red;*/
+}
+
+#navButtonBar .Button {
+	box-sizing: border-box;
+	display: table-cell;
+	float: left;
+	width: 25%;
+	height: 73px;
+	border-top: 1px white solid;
+	color: rgb(248, 248, 255);
+	background-color: rgba(182, 191, 201, .4);
+	box-shadow: -1px -1px 10px rgba(248, 248, 255,.7), 
+		3px 3px 10px rgba(109,126,146,.5) inset,
+		-3px -3px 5px rgba(248, 248, 255,.7) inset,
+		3px 3px 5px rgba(109, 126, 146, .5);
+/*	border: 1px solid teal;*/
+}
+
+.Button a {
+	padding-top: 17px;
+	padding-bottom: 13px;
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-family: 'Poiret One', cursive;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 21px;
+	vertical-align: middle;
+	text-align: center;
+	text-shadow: 2px 2px 2px rgb(0,0,0);
+/*	border: 1px solid yellow;*/
+}
+
+#navButtonBar .Button:hover {
+	background-color: rgba(154,163,175,.7);
+	font-weight: 700;
+	text-shadow: 1px 1px 2px rgba(46,55,69,.8);
+}
+
+#wrapper {
+/*	width: 75%;*/
+	max-width: 900px;
+	margin: 0px 25%;
+	padding-top: 80px;
+	padding-bottom: 50px;
+	background-color: rgba(0,05,0,.75);
+	position: relative;
+}
+
+#wrapper h1 {
+	margin: 10px 20px;
+	font-family: 'Yeseva One', cursive;
+	font-size: 36pt;
+	color: #e72f01;
+/*	text-shadow: 1px 0px 1px  brown;*/
+}
+
+#wrapper h2 {
+	margin: 30px 20px 0px 20px;
+	font-family: 'Yeseva One', cursive;
+	font-size: 28pt;
+	color: #e72f01;
+/*	text-shadow: 1px 0px 0px brown;*/
+}
+
+#wrapper h3 {
+	margin: 30px 20px 0px 20px;
+	font-family: Poiret One, cursive;
+	font-size: 20pt;
+	color: khaki;
+	font-weight: 700;
+/*	text-shadow: 1px 0px 1px #4a551b;*/
+}
+
+#wrapper h4 {
+	margin: 10px 20px 30px 20px;
+	font-family: 'Poiret One', cursive;
+	color: white;
+/*	color: #4f5047;*/
+	font-size: 13pt;
+	font-weight: 100;
+}
+
+#wrapper h4 a {
+	color: khaki;
+	font-size: 13pt;
+	font-weight: 700;
+}
+#wrapper h4 a:hover {
+	color: #e72f01;
+	font-size: 13pt;
+	font-weight: 700;
+	
+/*	text-shadow: 1px 0px 0px brown;*/
+}
+
+#wrapper p {
+	margin: 10px 20px;
+	font-family: 'Poiret One', cursive;
+	color: white;
+/*	color: #4f5047;*/
+	font-size: 16pt;
+	font-weight: 700;
+}
+
+#wrapper li {
+	margin: 10px 20px;
+	font-family: 'Poiret One', cursive;
+	color: white;
+	font-size: 14pt;
+	font-weight: 700;
+}
+
+#wrapper li a {
+	color: khaki;
+	font-size: 14pt;
+	font-weight: 700;	
+}
+
+#wrapper li a:hover {
+	color: #e72f01;
+	font-size: 14pt;
+	font-weight: 700;	
+}
+
+footer {
+	position: relative;
+	height: 100px;
+	width: 100%;
+	padding-top: 50px;
+	text-align: center;
+	background:
+	linear-gradient(45deg, transparent 30%, #897d55 50%, transparent 70%) 50px 50px,
+	linear-gradient(45deg, transparent 30%, #a29c82 50%, transparent 70%) 25px 25px,
+	linear-gradient(-45deg, transparent 30%, #8e8f4d 50%, transparent 70%) 0px 50px,
+	linear-gradient(-45deg, transparent 30%, #645f00 50%, transparent 70%) 25px 25px,
+	linear-gradient(-45deg, transparent 30%, #8e8f4d 50%, transparent 70%) 25px 0px;
+	background-color: #897d55;
+	background-size: 50px 50px;
+	z-index: 500;
+}
+
+footer h3 {
+	font-weight: 700;
+	font-size: 22pt;
+	color: #e72f01;
+	text-shadow: 1px 0px 1px brown;
+}
+
+

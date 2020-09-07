@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title></title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="CarolSpencerPru">
+<link href="../CSS/ContentPage.css" rel="stylesheet" type="text/css">
+<!--<script src="XXX.js" defer></script>-->
+<link href="https://fonts.googleapis.com/css?family=Yeseva+One|Poiret+One" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+	<nav id="navButtonBar">
+
+		<div class="Button"><a href="../index.html#BlogJump">A Hair Out&nbsp;of&nbsp;Place</a></div>
+		<div class="Button"><a href="../index.html#GalleryJump">A Dozen of&nbsp;Everywhere</a></div>
+		<div class="Button"><a href="../index.html#ResourcesJump">Resources</a></div>
+		<div class="Button"><a href="../index.html#KSUJump">KSU Work&nbsp;Examples</a></div>
+	</nav>
+	
+<header>
+
+	<h1><a href="../index.html">Pixels in<br />My<br />Hair</a></h1>
+
+</header>
+
+<div id="wrapper">
+	<h1>CSS Code Summary</h1>
+	<h4>This is a work in progress, so if you have any questions, or see any additions or refinements you think I should make, please feel free to send me your feedback at <a href="mailto: admin@pixelsinmyhair.com?subject=CSS%20Feedback">admin@pixelsinmyhair.com</a></h4>
+	<h2>Backgrounds</h2>
+  <p>Try not to confuse background images with positioned images.  Background images are in the container's Background.  All of the rest of the content lives on top of it.</p>
+	<ul>
+	  <li>For content to scroll under a background image, put the image in a container, then make the container fixed and give it a z-index</li>
+  </ul>
+  <h3>Background Properties</h3>
+  <ul>
+  	  <li>background-color:
+  	  <ul>
+  	  		<li>Values may be hex, rgb, rgba, or approved <a href="http://htmlcolorcodes.com/color-names/" target="_blank">color names</a></li>
+  	  </ul>
+  	  </li>
+  	  <li>background-image: url(whateverImage.jpg);
+  	  <ul>
+  	  		<li>No need for quotes</li>
+  	  		<li>Support for GIF, JPG, PNG, SVG</li>
+      </ul>
+  	  </li>
+  	  <li>background-repeat:
+  	  <ul>
+  	  		<li>Values may be repeat, no-repeat, repeat-x (to repeat the image horizontally, or in a row), repeat-y (to repeat values vertically, or in a column)
+  	  		</li>
+  	  </ul>
+	  </li>
+  	  <li>background-position: [horizontal] [vertical]
+  	  <ul>
+  	  		<li>Default is top center of its containing element</li>
+  	  		<li>Takes 2 numeric values:<br />
+  	  		The first value is its position from the left edge<br />
+			The second value is its position from the top edge</li>
+ 	   		<li>Also may use keywords top, bottom, right, left, center</li>
+  	  </ul>
+  	  </li>
+  	  <li>background-attachment:
+  	  <ul>
+  	  	<li>fixed: fixes the background in the viewport - prevents it from scrolling away
+  	  	<ul>
+  	  		<li>If you have a relatively placed container with a fixed background, the container will scroll up and down the screen and the background will be fixed, so the container will appear to scroll through it, not overlapping other fixed containers, because the containers are relatively placed, thus fixing the background images in different places</li>
+  	  		<li>To be sure text may scroll under (or over) the image, be sure to use a z-index on the container</li>
+  	  	</ul>
+  	  	</li>
+  	  	<li>scroll: the image scrolls along with the rest of the page</li>
+  	  </ul>
+  	  </li>
+  	  <li>background-size:  width [height]
+  	  <ul>
+  	  	<li>May use a percentage, or pixel width
+  	  	<ul>
+  	  		<li>A percentage will be relative to the containing element, or the viewport if the attachment is fixed</li>
+  	  		<li>100% will make the image the width of the container, and however high it is without stretching</li>
+  	  	</ul>
+  	  	</li>
+  	  	<li>cover - scales the image to cover the entire container, so part of the image may be clipped to preserve the aspect ratio of the image</li>
+  	  	<li>contain - letterboxes the image to preserve the aspect ratio, in order to fill either the width or height of the container</li>
+  	  </ul>
+  	  </li>
+  </ul>	
+  
+  <h3>Background Shorthand</h3>
+  
+  
+</div> <!-- End wrapper div -->
+
+	<footer>
+		<h3>&copy; 2017 PixelsInMyHair.com</h3>
+	</footer>
+
+</body>
+
+</html>

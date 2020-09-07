@@ -1,0 +1,209 @@
+/*Gallery.css */
+
+/* 
+    font-family: 'Yeseva One', cursive;
+
+	font-family: 'Poiret One', cursive;
+*/
+
+
+* {
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-size: 0px;
+}
+
+body {
+	background-color: #8d969e;
+	width: 100%;
+}
+
+.GalleryPageBackground {
+	width: 100%;
+	min-height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#MainWrapperRow {
+	padding-top: 150px;
+}
+
+#SiteTitle a {
+	font-family: 'Poiret One', cursive;
+}
+
+.ExtraHeadRoom {
+	padding-top: 2vh;
+}
+
+h1 {
+	font-family: 'Yeseva One', cursive;
+	font-size: 50px;
+	font-weight: 100;
+	margin-bottom: 2vh;
+}
+
+h2 {
+	padding-top: 20vh;
+	text-align: center;
+	font-size: 36px;
+	margin: 30px 5% 0px 25%;
+	text-shadow: 2px 2px 2px black;
+}
+
+p {
+	font-family: 'Poiret One', cursive;
+	font-size: 28px;
+	color: white;
+	margin-bottom: 1vh;
+}
+
+#MainContentArea {
+	width: 100%;
+	height: auto;
+	padding: 0px 1%;
+}
+
+#MainPhotoDiv {
+	width: 100%;
+	height: auto;
+	background-color: rgb(17,35,50,);
+}
+
+.MainImg {
+	width: 100%;
+}
+
+.MainText {
+	width: 100%;
+	line-height: 1.25;
+}
+
+.Readability {
+	background-color: rgba(17,35,50,.7);
+	padding: 2vh 2%;
+}
+
+.Sizing {
+	width: 45%;
+	margin: 0px 2% 1vh 0px;
+}
+
+.NotVisible {
+	display: none;
+}
+
+
+@media screen and (max-width:2000px) {
+	
+	#MainWrapperRow {
+		padding-top: 110px;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	p {
+		font-size: 24px;
+	}
+	
+}
+
+@media screen and (max-width:1400px) {	
+	
+	#MainWrapperRow {
+		padding-top: 85px;
+	}
+
+	h1 {
+		font-size: 30px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+		
+}
+
+@media screen and (max-width:992px) {
+	
+	#MainWrapperRow {
+		padding-top: 75px;
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	p {
+		font-size: 14px;
+	}	
+
+}
+
+@media screen and (max-width:768px) {
+	
+	#MainWrapperRow {
+		padding-top: 90px;
+	}
+
+	h1 {
+		font-size: 20px;
+	}
+
+	p {
+		font-size: 12px;
+	}	
+
+}
+
+@media screen and (max-width:650px) {
+	
+	#MainWrapperRow {
+		width: 100%;
+		padding: 70px 2% 0px 2%;
+		margin: 0px;
+	}
+
+	h1 {
+		font-size: 28px;
+		margin: 0px;
+	}
+	
+	#TitleH1 {
+	font-size: 6px;
+	}
+
+	p {
+		font-size: 12px;
+		padding-top: 1vh;
+	}
+	
+	#Construction {
+	font-size: 6px;
+	}
+
+	.Sizing {
+		width: 15%;
+		margin: 0px .83% 3vh .83%;
+	}
+	
+}
+
+@media screen and (max-width:650px) {
+	
+	.Sizing {
+		width: 23%;
+		margin: 0px 1% 3vh 1%;
+	}
+	
+}

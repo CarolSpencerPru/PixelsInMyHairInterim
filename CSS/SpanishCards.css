@@ -1,0 +1,576 @@
+/* 
+	font-family: 'Yeseva One', cursive;
+	font-family: 'Poiret One', cursive;
+*/
+
+
+* {
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	background-color: black;
+	background-image: url(http://www.pixelsinmyhair.com/Images/Segovia10.jpg);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+#SiteTitle a{
+	font-family: 'Poiret One', cursive;
+	display: block;
+	position: fixed;
+	top: 200px;
+	width: 25%;
+	padding-left: 2%;
+	text-decoration: none;
+	font-size: 150px;
+	line-height: 1.1;
+	color: white;
+	font-weight: 100;
+	text-shadow: 6px 4px 6px black;
+	z-index: 50;
+}
+
+
+h1 {
+	font-family: 'Yeseva One', cursive;
+	font-size: 45px;
+	font-weight: 100;
+	line-height: 1.5;
+	color: white;
+	text-shadow: 2px 2px 5px black;	
+}
+
+h3 {
+	font-family: 'Yeseva One', cursive;
+	font-size: 40px;
+	color: white;
+	font-weight: 100;
+	text-shadow: 2px 2px 5px black;	
+	margin: 36px 0px;
+}
+
+h4 {
+	font-family: 'Poiret One', cursive;
+	font-size: 36px;
+	line-height: 1.1;
+	font-weight: 100;
+	color: white;
+	text-shadow: 2px 2px 5px black;	
+	padding-right: 10%;
+}
+
+#Instructions {
+	float: left;
+	width: 75%;
+	margin-top: 175px;
+	padding-left: 2%;
+	margin-bottom: 50px;
+}
+
+#TitleSpacer {
+	float: left;
+	width: 25%;
+	height: 100vh;
+}
+
+#LeftDiv {
+	float: left;
+	width: 25%;
+}
+
+option {
+	height: 43px;
+	font-family: 'Poiret One', cursive;
+	color: white;
+	font-size: 36px;
+	line-height: 1.1;
+	font-weight: 100;
+	text-shadow: 2px 2px 3px black;
+	padding: 17px;
+	background-color: rgb(200, 0, 0);
+}
+
+#Categories, #Subcategories {
+	width: 85%;
+	background-color: rgba(255, 0, 0, .7);
+	font-family: 'Poiret One', cursive;
+	color: white;
+	font-size: 36px;
+	line-height: 1.1;
+	font-weight: 100;
+	padding: 17px;
+	text-shadow: 2px 2px 3px black;
+	border: outset 1px rgba(200, 0, 0, .6);
+	box-shadow: 3px 3px 13px rgba(0, 0, 0,.8), 
+		-2px -2px 5px rgba(100,0,0,.3) inset,
+		3px 3px 13px rgba(0, 0, 0,.8) inset,
+		-2px -2px 5px rgba(100,0,0,.3);
+}
+
+#Categories:hover, #Subcategories:hover {
+	background-color: rgba(153,30,8,.5);
+}
+
+
+#RightDiv {
+	float: left;
+	padding-left: 4%;
+	width: 45%;
+}
+
+#FinalCategory {
+	font-family: 'Yeseva One', cursive;
+	font-size: 45px;
+	font-weight: 100;
+	line-height: 1.5;
+	color: white;
+	text-shadow: 2px 2px 5px black;	
+}
+
+.InstClass {
+	height: 200px;
+}
+
+input {
+	width: 45%;
+	padding: 17px;
+	font-family: 'Poiret One', cursive;
+	font-size: 36px;
+	line-height: 1.2;
+	font-weight: 100;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+	background: rgba(255,0,0,.7);
+	border: outset 1px rgba(255, 0, 0, .6);
+	box-shadow: 3px 3px 13px rgba(0, 0, 0,.8), 
+		-2px -2px 5px rgba(100,0,0,.3) inset,
+		3px 3px 13px rgba(0, 0, 0,.8) inset,
+		-2px -2px 5px rgba(100,0,0,.3);
+}
+
+input:hover {
+	background-color: rgba(153,30,8,.5);
+}
+
+.Language {
+	width: 200px;
+	float: left;
+}
+
+.Word {
+	width: 500px;
+	float: left;
+	font-family: 'Poiret One', cursive;
+	font-size: 45px;
+	color: white;
+	font-weight: 700;
+	text-shadow: 3px 2px 1px black;
+	margin: 18px 0px;
+}
+
+@media screen and (max-width: 2000px) {
+	
+	#SiteTitle a {
+		top: 150px;
+		font-size: 100px;
+		text-shadow: 5px 5px 7px black;
+	}	
+	
+	h1 {
+		font-size: 34px;
+	}
+
+	h3 {
+		font-size: 30px;
+		margin: 30px 0px;
+	}
+
+	h4 {
+		font-size: 30px;
+	}
+	
+	#Instructions {
+		margin-top: 120px;
+	}
+
+
+	option {
+		height: 35px;
+		font-size: 30px;
+		padding: 13px;
+	}
+
+	#Categories, #Subcategories {
+		padding: 13px;
+		font-size: 30px;
+	}
+
+	#FinalCategory {
+		font-size: 34px;
+	}
+	
+	.InstClass {
+		height: 175px;
+	}
+
+	input {
+		padding: 13px;
+		font-size: 30px;
+	}
+
+	.Language {
+		width: 150px;
+		float: left;
+	}
+
+	.Word {
+		width: 300px;
+		font-size: 30px;
+		margin: 21px 0px;
+	}
+	
+}
+
+@media screen and (max-width: 1400px) {
+	
+	#SiteTitle a{
+		top: 120px;
+		font-size: 75px;
+		text-shadow: 3px 2px 3px black;
+	}
+	
+	h1 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	h4 {
+		font-size: 24px;
+	}
+
+	#Instructions {
+		margin-top: 100px;
+	}
+	
+	option {
+		height: 28px;
+		padding: 13px;
+		font-size: 24px;
+	}
+	
+	#Categories, #Subcategories {
+		padding: 13px;
+		font-size: 24px;
+	}
+
+	#FinalCategory {
+		font-size: 30px;
+	}
+	
+	.InstClass {
+		height: 110px;
+	}
+
+	input {
+		padding: 13px;
+		font-size: 24px;
+		line-height: 1.2;
+	}
+
+	.Language {
+		width: 120px;
+		font-size: 24px;
+		float: left;
+	}
+
+	.Word {
+		width: 270px;
+		font-size: 24px;
+		text-shadow: 2px 1px 1px black;
+		margin: 24px 0px;
+	}
+	
+}
+
+@media screen and (max-width: 1200px) {
+	
+	#SiteTitle a{
+		top: 90px;
+		font-size: 60px;
+		text-shadow: 3px 2px 3px black;
+	}
+	
+	h1 {
+		font-size: 22px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
+	#Instructions {
+		margin-top: 60px;
+	}
+	
+	option {
+		height: 24px;
+		padding: 11px;
+		font-size: 20px;
+	}
+	
+	#Categories, #Subcategories {
+		padding: 11px;
+		font-size: 20px;
+	}
+
+	#FinalCategory {
+		font-size: 22px;
+	}
+	
+	.InstClass {
+		height: 92px;
+	}
+
+	input {
+		padding: 11px;
+		font-size: 22px;
+		line-height: 1.2;
+	}
+
+	.Language {
+		width: 120px;
+		font-size: 22px;
+		float: left;
+	}
+
+	.Word {
+		width: 270px;
+		font-size: 22px;
+		text-shadow: 2px 1px 1px black;
+		margin: 24px 0px;
+	}
+	
+}
+
+@media screen and (max-width: 992px) {
+	
+	#TitleSpacer {
+		width: 50%;
+		float: left;
+		height: 850px;
+	}	
+	
+	#SiteTitle a{
+		top: 90px;
+		font-size: 90px;
+		text-shadow: 3px 2px 3px black;
+	}
+	
+	#Instructions {
+		margin-top: 60px;
+		width: 45%;
+		float: left;
+	}
+	
+	#LeftDiv {
+		width: 45%;
+		float: left;		
+	}
+	
+	h1 {
+		font-size: 32px;
+	}
+
+	h3 {
+		font-size: 28px;
+	}
+
+	h4 {
+		font-size: 24px;
+	}
+	
+	option {
+		height: 28px;
+		padding: 13px;
+		font-size: 24px;
+	}
+	
+	#Categories, #Subcategories {
+		padding: 13px;
+		font-size: 24px;
+	}
+	
+	#RightDiv {
+		float: left;
+		width: 45%;
+		padding-left: 0px;
+		min-width: 300px;
+}
+
+	#FinalCategory {
+		display: none;
+	}
+	
+	.InstClass {
+		height: 100px;
+	}
+	
+	#InstrSpacerH3 {
+		margin: 5px 0px;
+	}
+
+	#InstrSpacerID {
+		height: 45px;
+	}
+	
+	input {
+		width: 85%;
+		padding: 13px;
+		font-size: 24px;
+		line-height: 1.2;
+	}
+
+	.Language {
+		float: left;
+		width: 110px;
+		font-size: 22px;
+	}
+
+	.Word {
+		float: left;
+		width: 150px;
+		font-size: 24px;
+		text-shadow: 2px 1px 1px black;
+		margin: 23px 0px;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	
+	.Language {
+		width: 100px;
+		float: left;
+	}
+
+	.Word {
+		width: 180px;
+		font-size: 20px;
+		text-shadow: 2px 1px 1px black;
+		margin: 26px 0px;
+	}
+	
+}
+
+@media screen and (max-width: 650px) {
+	
+	#Wrapper {
+		background-color: rgba(27, 11, 0, .5);
+		height: 770px;
+	}
+	
+	#SiteTitle a{	
+		display: none;
+	}
+	
+	#SiteTitleBar a {
+		font-family: 'Poiret One', cursive;
+	}
+	
+	#TitleSpacer {
+		display: none;
+	}
+
+	#Instructions {
+		width: 100%;
+		height: 5px;
+	}
+	
+	#LeftDiv {
+		float: none;
+		width: 100%;
+		padding-left: 8%;
+	}
+	
+	option {
+		height: 28px;
+		font-size: 24px;
+		padding: 11px;
+	}
+
+	#Categories, #Subcategories {
+		width: 90%;
+		font-size: 24px;
+		padding: 11px 30px;
+	}
+	
+	#RightDiv {
+		float: none;
+		width: 100%;
+		padding-left: 8%;
+	}
+	
+	input {
+		width: 90%;
+		padding: 11px 30px;
+		font-size: 24px;
+		text-align: left;
+	}
+
+	.Language {
+		width: 110px;
+		font-size: 24px;		
+		float: left;
+	}
+
+	.Word {
+		width: 330px;
+		float: left;
+		font-size: 22px;
+	}
+	
+}
+
+@media screen and (max-width: 500px) {
+	
+	.Language {
+		width: 100px;
+		font-size: 20px;		
+		float: left;
+	}
+
+	.Word {
+		width: 200px;
+		float: left;
+		font-size: 20px;
+	}
+
+	
+}
+
+@media screen and (max-width: 340px) {
+	.Word {
+		width: 180px;
+		margin-top: 25px;
+	}
+	
+}
+
+
+
+
+
+
