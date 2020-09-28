@@ -1,6 +1,6 @@
 /* index.css */
 
-/* 
+/*
     font-family: 'Yeseva One', cursive;
 
 	font-family: 'Poiret One', cursive;
@@ -17,7 +17,7 @@
 
 	gradient red resources: linear-gradient(-180deg, rgba(254,12,15,.8) 30%, rgba(254,12,15,0) 99%);
 
-	navigation box-shadow: -2px -2px 20px rgba(248, 248, 255,.7), 
+	navigation box-shadow: -2px -2px 20px rgba(248, 248, 255,.7),
 		6px 6px 20px rgba(109,126,146,.5) inset,
 		-6px -6px 10px rgba(248, 248, 255,.7) inset,
 		6px 6px 10px rgba(109, 126, 146, .5);
@@ -63,7 +63,7 @@ a:focus, a:hover {
 	border-top: 2px white solid;
 	color: rgb(248, 248, 255);
 	background: linear-gradient(180deg, #c9d1db 40%, transparent 99%);
-	box-shadow: -2px -2px 20px rgba(248, 248, 255,.7), 
+	box-shadow: -2px -2px 20px rgba(248, 248, 255,.7),
 		6px 6px 20px rgba(109,126,146,.5) inset,
 		-6px -6px 10px rgba(248, 248, 255,.7) inset,
 		6px 6px 10px rgba(109, 126, 146, .5);
@@ -101,7 +101,7 @@ a:focus, a:hover {
 #NavButtonBar .Red {
 	background: linear-gradient(180deg, #990000 40%, transparent 99%);
 	font-weight: 700;
-	text-shadow: 2px 2px 4px rgba(46,55,69,.8);	
+	text-shadow: 2px 2px 4px rgba(46,55,69,.8);
 }
 
 header {
@@ -258,7 +258,7 @@ h3 {
 	padding: 20vh 5%;
 	background-color: rgba(26,47,66,.2);
 	border-radius: 5%;
-	box-shadow: -2px -2px 7px rgba(255,255,255,.5) inset, 
+	box-shadow: -2px -2px 7px rgba(255,255,255,.5) inset,
 		-3px -3px 7px rgba(255,255,255,.5),
 		2px 2px 7px rgba(26,47,66,.7) inset,
 		1px 1px 7px rgba(26,47,66,.7);
@@ -271,7 +271,7 @@ h3 {
 
 .Gap {
 	position: relative;
-	height: 60vh;
+	height: 100vh;
 	background-image: url(Images/TrafalgarMermaid_Final.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -283,7 +283,7 @@ h3 {
 	background-image: url('Images/Alhambra_GranadaSpain.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center bottom;	
+	background-position: center bottom;
 }
 
 #PhotoGallery img {
@@ -406,7 +406,7 @@ h3 {
 #RightResources {
 	float: left;
 	width: 40%;
-	margin: 0px 5%;	
+	margin: 0px 5%;
 }
 
 .ResourceClass a {
@@ -519,7 +519,7 @@ footer h3 {
 }
 
 @media screen and (max-width: 2000px) and (orientation: landscape) {
-	
+
 	#NavButtonBar .Button {
 		height: 100px;
 	}
@@ -540,7 +540,7 @@ footer h3 {
 	}
 
 	#NavButtonBar .Red {
-		text-shadow: 3px 3px 3px rgba(46,55,69,.8);	
+		text-shadow: 3px 3px 3px rgba(46,55,69,.8);
 	}
 
 	header img {
@@ -573,7 +573,7 @@ footer h3 {
 	#TravelBlog img {
 		display: none;
 	}
-	
+
 	.PhotoBar {
 		height: 70px;
 	}
@@ -611,11 +611,11 @@ footer h3 {
 /*		height: 94vh;*/
 		padding-top: 0px;
 	}
-	
+
 	#About {
 		padding: 180px 2% 0px 52%;
 	}
-	
+
 }
 
 @media screen and (max-width: 1400px) and (orientation: landscape) {
@@ -623,7 +623,7 @@ footer h3 {
 	#NavButtonBar .Button {
 		height: 73px;
 		border-top: 1px white solid;
-		box-shadow: -1px -1px 10px rgba(248, 248, 255,.7), 
+		box-shadow: -1px -1px 10px rgba(248, 248, 255,.7),
 			3px 3px 10px rgba(109,126,146,.5) inset,
 			-3px -3px 5px rgba(248, 248, 255,.7) inset,
 			3px 3px 5px rgba(109, 126, 146, .5);
@@ -645,7 +645,7 @@ footer h3 {
 	}
 
 	#NavButtonBar .Red {
-		text-shadow: 1px 1px 2px rgba(46,55,69,.8);	
+		text-shadow: 1px 1px 2px rgba(46,55,69,.8);
 	}
 
 	header img {
@@ -674,7 +674,7 @@ footer h3 {
 	#WhatsNew {
 		padding: 100px 2% 50px 52%;
 	}
-		
+
 	#WhatsNew p {
 		margin-bottom: 20px;
 	}
@@ -726,11 +726,11 @@ footer h3 {
 	#KSU {
 		padding-top: 0px;
 	}
-	
+
 	#About {
-		padding: 150px 2% 0px 52%;		
+		padding: 150px 2% 0px 52%;
 	}
-	
+
 	#About p {
 		margin-bottom: 20px;
 	}
@@ -742,11 +742,11 @@ footer h3 {
 	#SiteTitle a {
 		font-size: 65px;
 	}
-	
+
 	h3 {
 		font-size: 37px;
 	}
-	
+
 	.PhotoBar {
 		height: 40px;
 	}
@@ -770,25 +770,21 @@ footer h3 {
 		font-size: 12px;
 		line-height: 20px;
 	}
-	
+
 
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-	
-	
+
+
 	#HeaderArticle #WhatsNew {
 		padding: 80px 2% 5px 52%;
 		}
-	
+
 	#WhatsNew h3 {
 		font-size: 25px;
 	}
-	
-	.Gap {
-		height: 75vh;
-	}
-	
+
 	.PhotoBar {
 		height: 40px;
 	}
@@ -812,7 +808,7 @@ footer h3 {
 		font-size: 12px;
 		line-height: 20px;
 	}
-	
+
 	#ResourcesAside {
 		padding-top: 100px;
 	}
@@ -820,7 +816,7 @@ footer h3 {
 	#ResourcesAside .ResourceClass {
 		padding: 2vh 20px 2vh 20px;
 	}
-	
+
 	#TravelBlog aside {
 		padding: 100px 52% 0px 2%;
 	}
@@ -828,15 +824,15 @@ footer h3 {
 	#About {
 		padding: 100px 2% 5px 52%;
 	}
-	
+
 	#About h3{
 		font-size: 25px;
 	}
-	
+
 }
 
 @media (min-width: 2001px) and (orientation: portrait) {
-	
+
 	header {
 		position: relative;
 		width: 100%;
@@ -851,7 +847,7 @@ footer h3 {
 	header img {
 		display: block;
 	}
-	
+
 	#HeaderArticle img {
 		display: block;
 		object-fit: cover;
@@ -875,7 +871,7 @@ footer h3 {
 		font-size: 4.5vh;
 		margin-top: 10px;
 		margin-left: 0px;
-	}	
+	}
 
 	#WhatsNew p {
 		font-size: 2.3vh;
@@ -899,7 +895,7 @@ footer h3 {
 		color: red;
 		font-weight: 700;
 	}
-	
+
 	.PhotoBar {
 		background-color: rgba(0,0,0,.5);
 		border-bottom: 1px solid #222;
@@ -955,7 +951,7 @@ footer h3 {
 		color: #ccc;
 	}
 
-	
+
 	#ResourcesAside .ResourceClass {
 		display: block;
 		width: 100%;
@@ -968,7 +964,7 @@ footer h3 {
 		font-weight: 700;
 		font-size: 4vh;
 	}
-	
+
 	.ItemClass {
 		display: block;
 		font-family: 'Poiret One', cursive;
@@ -1000,11 +996,11 @@ footer h3 {
 		background-image: none;
 		z-index: unset;
 	}
-	
+
 	#TravelBlog img {
 		display: block;
 	}
-	
+
 	#TravelBlogArticle img {
 		display: block;
 		object-fit: cover;
@@ -1012,7 +1008,7 @@ footer h3 {
 		height: 60vh;
 		object-position: center center;
 	}
-	
+
 	#TravelBlogArticle aside {
 		position: relative;
 		width: 100%;
@@ -1024,25 +1020,25 @@ footer h3 {
 		box-shadow: 1px 1px 125px #353212 inset;
 		z-index: 100;
 	}
-	
+
 	#ComboBottom {
 		position: relative;
 		height: 94vh;
 		width: 100%;
 		z-index: unset;
 	}
-	
+
 	#KSU {
 		width: 100%;
     	height: 94vh;
     	padding-top: 0px;
-    	background-image: none; 
+    	background-image: none;
 	}
 
 	#ComboBottom img {
 		display: block;
 	}
-	
+
 	#KSU img {
 		display: block;
 		object-fit: cover;
@@ -1050,7 +1046,7 @@ footer h3 {
 		height: 60vh;
 		object-position: center center;
 	}
-	
+
 	#About {
 		position: relative;
 		width: 100%;
@@ -1061,12 +1057,12 @@ footer h3 {
 		box-shadow: 1px 1px 125px #353212 inset;
 		z-index: 100;
 	}
-	
+
 	#About h3 {
 		font-size: 4.5vh;
 		margin-top: 40px;
 	}
-	
+
 	footer {
 		position: relative;
 		background-color: rgb(69,101,139);
@@ -1086,7 +1082,7 @@ footer h3 {
 }
 
 @media (max-width: 2000px) and (orientation: portrait) {
-	
+
 	header {
 		position: relative;
 		width: 100%;
@@ -1096,7 +1092,7 @@ footer h3 {
 	#SiteTitle {
 		font-size: 120px;
 	}
-	
+
 	#HeaderArticle {
 		height: 50vh;
 		background-image: none;
@@ -1105,7 +1101,7 @@ footer h3 {
 	header img {
 		display: block;
 	}
-	
+
 	#HeaderArticle img {
 		display: block;
 		object-fit: cover;
@@ -1127,7 +1123,7 @@ footer h3 {
 
 	#WhatsNew h3 {
 		font-size: 3vh;
-	}	
+	}
 
 	#WhatsNew p {
 		font-size: 2.1vh;
@@ -1150,7 +1146,7 @@ footer h3 {
 	#WhatsNew a:hover, #WhatsNew a:active, #WhatsNew a:focus {
 		color: red;
 	}
-	
+
 	#ResourcesAside .ResourceClass {
 		display: block;
 		width: 100%;
@@ -1163,7 +1159,7 @@ footer h3 {
 		font-weight: 700;
 		font-size: 2.7vh;
 	}
-	
+
 	.PhotoCountry {
 		font-family: 'Poiret One', cursive;
 		font-weight: 700;
@@ -1241,11 +1237,11 @@ footer h3 {
 		background-image: none;
 		z-index: unset;
 	}
-	
+
 	#TravelBlog img {
 		display: block;
 	}
-	
+
 	#TravelBlogArticle img {
 		display: block;
 		object-fit: cover;
@@ -1253,7 +1249,7 @@ footer h3 {
 		height: 50vh;
 		object-position: center center;
 	}
-	
+
 	#TravelBlogArticle aside {
 		position: relative;
 		width: 100%;
@@ -1265,7 +1261,7 @@ footer h3 {
 		box-shadow: 1px 1px 125px #353212 inset;
 		z-index: 100;
 	}
-	
+
 	#TravelBlogArticle aside p {
 		font-size: 2.1vh;
 		line-height: 1.1em;
@@ -1283,29 +1279,29 @@ footer h3 {
 		text-shadow: 3px 3px 5px black;
 		text-decoration: none;
 	}
-	
+
 	#HiddenBlogButton {
 		display: none;
 	}
-	
+
 	#ComboBottom {
 		position: relative;
 		height: 94vh;
 		width: 100%;
 		z-index: unset;
 	}
-	
+
 	#KSU {
 		width: 100%;
     	height: 94vh;
     	padding-top: 0px;
-    	background-image: none; 
+    	background-image: none;
 	}
 
 	#ComboBottom img {
 		display: block;
 	}
-	
+
 	#KSU img {
 		display: block;
 		object-fit: cover;
@@ -1313,7 +1309,7 @@ footer h3 {
 		height: 47vh;
 		object-position: center center;
 	}
-	
+
 	#About {
 		position: relative;
 		width: 100%;
@@ -1324,11 +1320,11 @@ footer h3 {
 		box-shadow: 1px 1px 125px #353212 inset;
 		z-index: 100;
 	}
-	
+
 	#About h3 {
 		font-size: 3vh;
 	}
-	
+
 	#About p {
 		font-size: 2.1vh;
 		line-height: 1.1em;
@@ -1337,7 +1333,7 @@ footer h3 {
 		text-shadow: 3px 3px 5px black;
 		text-decoration: none;
 	}
-	
+
 	#About p a {
 		font-size: 2.1vh;
 		line-height: 1.1em;
@@ -1346,7 +1342,7 @@ footer h3 {
 		text-shadow: 3px 3px 5px black;
 		text-decoration: none;
 	}
-	
+
 	footer {
 		position: relative;
 		background-color: rgb(69,101,139);
@@ -1369,20 +1365,20 @@ footer h3 {
 	#NavButtonBar .Button {
     	height: 90px;
 	}
-	
-	
+
+
 	.Button a, .Button a:link {
 		padding-top: 20px;
 		color: white;
 		font-size: 27px;
 		line-height: 27px;
 	}
-	
+
 	#SiteTitle a {
 		top: 150px;
 		font-size: 75px;
 }
-	
+
 	#HeaderArticle {
 		height: 50vh;
 		background-image: none;
@@ -1391,10 +1387,10 @@ footer h3 {
 	header img {
 		display: block;
 	}
-	
+
 	#WhatsNew h3 {
 		font-size: 3vh;
-	}	
+	}
 
 	#WhatsNew p {
 		font-size: 2.1vh;
@@ -1411,11 +1407,11 @@ footer h3 {
 	#WhatsNew a:hover, #WhatsNew a:active, #WhatsNew a:focus {
 		color: red;
 	}
-	
+
 	.PhotoBar {
 		height: 75px;
 	}
-	
+
 	.PhotoCountry {
 		font-size: 23px;
 		line-height: 75px;
@@ -1436,7 +1432,7 @@ footer h3 {
 		font-size: 17px;
 		line-height: 37px;
 	}
-	
+
 	#ResourcesAside .ResourceClass {
 		font-size: 2.5vh;
 		padding: 30px;
@@ -1467,11 +1463,11 @@ footer h3 {
 		background-image: none;
 		z-index: unset;
 	}
-	
+
 	#TravelBlog img {
 		display: block;
 	}
-	
+
 	#TravelBlogArticle img {
 		display: block;
 		object-fit: cover;
@@ -1479,7 +1475,7 @@ footer h3 {
 		height: 50vh;
 		object-position: center center;
 	}
-	
+
 	#TravelBlogArticle aside {
 		position: relative;
 		width: 100%;
@@ -1487,7 +1483,7 @@ footer h3 {
 		float: none;
 		z-index: 100;
 	}
-	
+
 
 	#HiddenBlogButton {
 		display: none;
@@ -1496,26 +1492,26 @@ footer h3 {
 }
 
 @media screen and (max-width: 650px) {
-	
+
 	header {
 		background-image: none;
 		width: 100%;
 		height: 100vh;
 		z-index: 10;
 	}
-	
+
 	#NavButtonBar .Button {
 		height: 73px;
 		background: linear-gradient(180deg, #c9d1db 60%, transparent 99%);
 	}
-	
+
 	#SiteTitle a {
 		display: none;
 	}
-	
-	#SiteTitleBar {		
+
+	#SiteTitleBar {
 		background: linear-gradient(180deg, #c9d1db 45%, rgba(109, 126, 146, .8) 99%);
-		box-shadow: -1px -1px 10px rgba(248, 248, 255,.7), 
+		box-shadow: -1px -1px 10px rgba(248, 248, 255,.7),
 			3px 3px 10px rgba(109,126,146,.5) inset,
 			-3px -3px 5px rgba(248, 248, 255,.7) inset,
 			3px 3px 5px rgba(109, 126, 146, .7);
@@ -1525,7 +1521,7 @@ footer h3 {
 		padding: 3px 0px 3px 20px;
 		margin-bottom: 0;
 	}
-	
+
 	.navbar-brand a {
 		position: fixed;
 		top: 0px;
@@ -1544,9 +1540,9 @@ footer h3 {
 		padding-top: 10px;
 		right: 0px;
 	}
-	
+
 	header img {
-		position: relative; 
+		position: relative;
 		top: 0px;
 		margin-top: 35px;
 		left: 0px;
@@ -1570,7 +1566,7 @@ footer h3 {
 		font-size: 25px;
 		margin-top: 0px;
 		margin-left: 0px;
-	}	
+	}
 
 	#WhatsNew p {
 		font-size: 13pt;
@@ -1594,22 +1590,22 @@ footer h3 {
 		color: red;
 		font-weight: 700;
 	}
-	
+
 	div#BarPhotoGallery {
 		margin-top: -50px;
 	}
-	
+
 	#PhotoGalleryArticle {
 		padding-top: 80px;
 		padding-bottom: 30px;
 	}
-	
+
 	#BlogJump {
 		display: block;
 		position: relative;
 		top: -53px;
 	}
-	
+
 	div .RedBar {
 		display: block;
 		position: relative;
@@ -1619,14 +1615,14 @@ footer h3 {
 		font-size: 24px;
 		line-height: 53px;
 		font-weight: 700;
-		text-shadow: 2px 2px 4px rgba(46,55,69,.8);	
+		text-shadow: 2px 2px 4px rgba(46,55,69,.8);
 		color: khaki;
 		border-bottom: 1px solid red;
 		border-top: 1px solid red;
 		padding-left: 40px;
 		z-index: 1000;
 	}
-	
+
 	#TravelBlog {
 		position: relative;
 		width: 100%;
@@ -1656,7 +1652,7 @@ footer h3 {
 		background-color: #929544;
 		box-shadow: 1px 1px 125px #353212 inset;
 		overflow: hidden;
-	}	
+	}
 
 	#TravelBlog p {
 		font-size: 13pt;
@@ -1679,11 +1675,11 @@ footer h3 {
 	#HiddenBlogLink {
 		display: none;
 	}
-	
+
 	.Gap {
 		display: none;
 	}
-	
+
 	#GalleryJump {
 		display: block;
 		position: relative;
@@ -1724,7 +1720,7 @@ footer h3 {
 		float: left;
 		width: 40%;
 		min-width: 190px;
-		margin: 0px 5%;	
+		margin: 0px 5%;
 	}
 
 	#ResourcesAside ul{
@@ -1781,20 +1777,20 @@ footer h3 {
 		font-weight: 700;
 		list-style-type: none;
 	}
-	
+
 		#KSUJump {
 		display: display;
 		position: relative;
 		top: -53px;
 	}
-	
+
 	#ComboBottom {
 		width: 100%;
 		height: 100vh;
 		margin-top: -50px;
 	}
 
-	#KSU {	
+	#KSU {
 		background-image: none;
 		width: 100%;
 		height: 47vh;
@@ -1814,7 +1810,7 @@ footer h3 {
 		position: relative;
 		top: -50px;
 	}
-	
+
 	#About {
 		height: 50vh;
 	}
@@ -1839,7 +1835,7 @@ footer h3 {
 		font-weight: 700;
 		text-decoration: none;
 		text-align: center;
-	}	
+	}
 
 }
 
@@ -1860,9 +1856,9 @@ footer h3 {
 	#RightResources {
 		width: 70%;
 		min-width: 190px;
-		margin: 0px 15%;	
+		margin: 0px 15%;
 	}
-	
+
 }
 
 @media screen and (max-width: 330px) {
@@ -1879,4 +1875,72 @@ footer h3 {
     width: 65%;
     float: right;
     margin-right: 10%;
+}
+
+/* Minor Repainting for Interim Version */
+
+body {
+    background-color: #333;
+}
+
+.fixed-top {
+    width:  75%;
+    left: 25%;
+}
+
+#SiteTitle a {
+    top: 10px;
+}
+
+/* #LinkContainer {
+    height: 73px;
+    background: linear-gradient(180deg, #c9d1db 40%, transparent 99%);
+    border-top: none;
+    box-shadow: -1px -1px 10px rgba(248, 248, 255,.7),
+        3px 3px 10px rgba(109,126,146,.5) inset,
+        -3px -3px 5px rgba(248, 248, 255,.7) inset,
+        3px 3px 5px rgba(109, 126, 146, .5);
+} */
+
+#NavButtonBar .Button {
+    height: 73px;
+    border-top: none;
+    box-shadow: none;
+    background: transparent;
+    border: 3px groove transparent;
+    box-sizing: content-box;
+    }
+
+#NavButtonBar .Button:hover {
+    border: 3px groove rgba(255, 255, 255, .5);
+    box-sizing: content-box;
+    background: transparent;
+    box-shadow: 1px 1px 10px rgba(248, 248, 255,.7),
+        3px 3px 10px rgba(109,126,146,.5) inset,
+        3px 3px 5px rgba(248, 248, 255,.7) inset,
+        3px 3px 5px rgba(109, 126, 146, .5);
+}
+
+#HeaderArticle {
+    background-image: url(Images/IpanimaHomePage.jpg);
+    width: 75%;
+    margin-left: 25%
+}
+
+#WhatsNew {
+    padding: 240px 2% 50px 2.5%;
+    margin-left: -33%;
+    width: 25vw;
+}
+
+#WhatsNew h3 {
+    display: none;
+}
+
+#PhotoGallery {
+    background: linear-gradient(135deg, #f6ffff 30%, #B5A162);
+}
+
+.Gap {
+    height: 100vh;
 }
