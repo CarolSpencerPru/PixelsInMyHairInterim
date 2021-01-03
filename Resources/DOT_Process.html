@@ -1,0 +1,161 @@
+<style>
+#cspTableCollapse table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 95%;
+  table-layout: fixed;
+}
+
+#cspTableCollapse table tr {
+   border: 1px solid #ddd;
+   padding: .35em;
+}
+
+#cspTableCollapse table th {
+   border: 1px solid #ddd;
+   background-color: #ddd;
+   padding: .35em;
+}
+
+#cspTableCollapse table tr:nth-child(even) {
+   border: 1px solid #ddd;
+   background-color: #eee;
+   padding: .35em;
+}
+
+#cspTableCollapse table th, #cspTableCollapse table td {
+   padding: .625em;
+   text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+   #cspTableCollapse table {
+       border: 0;
+   }
+
+   #cspTableCollapse table thead {
+       border: none;
+       clip: rect(0 0 0 0);
+       height: 1px;
+       margin: -1px;
+       overflow: hidden;
+       padding: 0;
+       position: absolute;
+       width: 1px;
+   }
+
+   #cspTableCollapse table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+   }
+
+   #cspTableCollapse table tr:nth-child(even) {
+      background-color: #fff;
+   }
+
+   #cspTableCollapse table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: left;
+   }
+
+   #cspTableCollapse table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: left;
+   }
+
+   #cspTableCollapse table td:last-child {
+      border-bottom: 0;
+   }
+
+/* END max-width: 782 */
+}
+</style>
+
+<h1>DOT Process</h1>
+
+<p>Parkview Occupational Health strives to make the DOT process easy for you.</p>
+
+<p>To expedite the physical and clearance process, please prepare for your DOT or Bus Driver Physical by reviewing the grid below, click on the link to the&nbsp;form required and&nbsp;take it to your treating physician PRIOR to your Occupational Health appointment.</p>
+
+<p>Our goal is to get you cleared, and keep you driving. Compliance with your treatment plan and completion of required documentation will help avoid holds. Please bring all required documentation to your physical appointment.</p>
+
+<p><strong>&nbsp;** Please note the following information is intended to be a guideline. Our goal is to equip you with the information needed to reduce unnecessary holds. This is not&nbsp;meant to be a complete list of all requirements.&nbsp; We cannot guarantee that you will receive your certification on the day of your visit.**</strong></p>
+
+<p>&nbsp;</p>
+
+<div id="cspTableCollapse">
+   <table>
+      <thead>
+         <tr>
+            <th scope="col" width="25%">Condition</th>
+            <th scope="col" width="30%">Driver To Do's</th>
+            <th scope="col" width="30%">Required for Clearance</th>
+            <th scope="col" width="15%">Link to Required Form</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td data-label="Condition:&nbsp;">General Medical Condition (any medication prescribed, any cardiovascular&nbsp;/ neurological disease or condition other than those listed below)</td>
+            <td data-label="Driver To Do's:&nbsp;">Compliance with treatment plan.  Send list of medications with physical.  Completion of DOT General Medical Clearance form by treating physician.</td>
+            <td data-label="Required for Clearance:&nbsp;">Compliance with treatment plan.  Completed DOT General Medical Clearance form.</td>
+            <td data-label="Link to Required Form:&nbsp;">Click Here</td>
+         </tr>
+         <tr>
+            <td data-label="Condition:&nbsp;">Sleep Apnea</td>
+            <td data-label="Driver To Do's:&nbsp;">Consistent use of CPAP machine.  Compliant with treatment plan.  Obstructive Sleep Apnea (OSA) Form completed and signed by sleep specialist or treating physician.</td>
+            <td data-label="Required for Clearance:&nbsp;">Consistent use of CPAP machine.  Compliant with treatment plan.  Completed OSA form.</td>
+            <td data-label="Link to Required Form:&nbsp;">Click Here</td>
+         </tr>
+         <tr>
+            <td data-label="Condition:&nbsp;">High Blood Pressure</td>
+            <td data-label="Driver To Do's:&nbsp;">Send medication list with physical form.  Compliant with treatment plan from physician, including taking medication as prescribed.  Completion of DOT High Blood Pressure Clearance form.</td>
+            <td data-label="Required for Clearance:&nbsp;">Controlled blood pressure at time of physical.  At least two separate readings on two subsequent dates that are < 140/90.  Completed DOT High Blood Pressure Clearance form.</td>
+            <td data-label="Link to Required Form:&nbsp;">Click Here</td>
+         </tr>
+         <tr>
+            <td data-label="Condition:&nbsp;">High Blood Sugar/ Diabetes</td>
+            <td data-label="Driver To Do's:&nbsp;">Compliance with treatment plan.  Send medication list with physical.  Recent A1C lab test (within 3 months of physical date).  Completion of DOT Blood Sugar Clearance form by treating physician.</td>
+            <td data-label="Required for Clearance:&nbsp;">Recent A1C &lt;9% plus completed Blood Sugar Clearance form.</td>
+            <td data-label="Link to Required Form:&nbsp;">Click Here</td>
+         </tr>
+         <tr>
+            <td data-label="Condition:&nbsp;">Psychiatric Condition</td>
+            <td data-label="Driver To Do's:&nbsp;">Compliance with treatment plan.  Send medication list with physical form.  Completion of DOT Psychotropic Clearance form by treating physician.</td>
+            <td data-label="Required for Clearance:&nbsp;">Compliance with treatment plan.  Completed DOT Psychotropic Clearance form.</td>
+            <td data-label="Link to Required Form:&nbsp;">Click Here</td>
+         </tr>
+         <tr>
+            <td data-label="Condition:&nbsp;">Pain Medication / Other Substance Abuse</td>
+            <td data-label="Driver To Do's:&nbsp;">Compliance with treatment plan.  Send medication list with physical form.  Completion of Substance Abuse Clearance form by treating physician or substance abuse professional. **Typically DOT does not allow bus drivers to operate a school bus while taking narcotics.**</td>
+            <td data-label="Required for Clearance:&nbsp;">Compliance with treatment plan.  Completed Substance Abuse Clearance form.</td>
+            <td data-label="Link to Required Form:&nbsp;">Click Here</td>
+         </tr>
+         <tr>
+            <td data-label="Condition:&nbsp;">Heart Condition / Stent / Angioplasty (Balloon)</td>
+            <td data-label="Driver To Do's:&nbsp;">Compliance with treatment plan.  Send medication list with physical form.  Recent treadmill test post procedure.  Completion of DOT Angioplasty/Stent Clearance form by treating physician.</td>
+            <td data-label="Required for Clearance:&nbsp;">Compliance with treatment plan.  Negative treadmill test 3-6 months post procedure or at least every other year per DOT recommendations.  Completed DOT Angioplasty / Stent Clearance form.</td>
+            <td data-label="Link to Required Form:&nbsp;">Click Here</td>
+         </tr>
+         <tr>
+            <td data-label="Condition:&nbsp;">Recent heart attack or acute myocardial infarction</td>
+            <td data-label="Driver To Do's:&nbsp;">Recent doctor visit notes.</td>
+            <td data-label="Required for Clearance:&nbsp;">Minimum of 2 month waiting period post acute MI.  Will require full review of health history and may include hold.</td>
+            <td data-label="Link to Required Form:&nbsp;">Click Here</td>
+         </tr>
+         <tr>
+            <td data-label="Condition:&nbsp;">Other disqualifying conditions:</td>
+            <td data-label="Driver To Do's:&nbsp;">Monocular vision, someone with an implantable cardioverter defibrillator (ICD), someone taking narcotics, methadone, medical marijuana or anti-seizure medication for the prevention of seizures.</td>
+            <td data-label="Required for Clearance:&nbsp;">&nbsp;</td>
+            <td data-label="Link to Required Form:&nbsp;">&nbsp;</td>
+         </tr>
+      </tbody>
+   </table>
+</div> <!-- END #cspTableCollapse -->

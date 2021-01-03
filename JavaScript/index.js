@@ -12,13 +12,15 @@ $(document).ready(function() {
 	var offsetTravelSection = $('#TravelBlog').offset().top;
 	var offsetKSUSection = $('#KSU').offset().top;
 
+	var navHeight = $('#LinkContainer').height();
+
 	if (widthWindow >= 651) {
 
 //Red button for Photo Gallery
 		$(window).scroll(function() {
 			var scrollPos = $(window).scrollTop();
 
-			if (scrollPos >= offsetGallerySection-20 && scrollPos <= offsetResourcesSection-20) {
+			if (scrollPos >= offsetGallerySection - navHeight && scrollPos <= offsetResourcesSection - navHeight) {
 
 				$('#ButtonGallery').addClass('Red');
 
@@ -33,7 +35,7 @@ $(document).ready(function() {
 		$(window).scroll(function() {
 			var scrollPos = $(window).scrollTop();
 
-			if (scrollPos >= offsetResourcesSection-20 && scrollPos <= offsetTravelSection-20) {
+			if (scrollPos >= offsetResourcesSection - navHeight && scrollPos <= offsetTravelSection - navHeight) {
 
 				$('#ButtonResources').addClass('Red');
 
@@ -48,7 +50,7 @@ $(document).ready(function() {
 		$(window).scroll(function() {
 			var scrollPos = $(window).scrollTop();
 
-			if (scrollPos >= offsetTravelSection && scrollPos <= offsetKSUSection-20) {
+			if (scrollPos >= offsetTravelSection-navHeight && scrollPos <= offsetKSUSection-navHeight) {
 
 				$('#ButtonHair').addClass('Red');
 
@@ -64,7 +66,7 @@ $(document).ready(function() {
 		$(window).scroll(function() {
 			var scrollPos = $(window).scrollTop();
 
-			if (scrollPos >= offsetKSUSection-20) {
+			if (scrollPos >= offsetKSUSection-navHeight) {
 
 				$('#ButtonKSU').addClass('Red');
 

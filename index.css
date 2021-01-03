@@ -1,26 +1,15 @@
 /* index.css */
 
 /*
-    font-family: 'Yeseva One', cursive;
+	font-family: 'Alice', serif;
 
-	font-family: 'Poiret One', cursive;
+    font-family: 'Proza Libre', sans-serif;
 
-	font-family: 'Antic Didone', serif;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 
-	font-family: 'Arima Madurai', sans-serif;
+	new blue: #5960d6;
 
-	resume blue: rgb(69,101,139);
-
-	gradient blue: linear-gradient(to right, transparent 60%, rgba(26,47,66,.85) 80%);
-
-	gradient silver button: linear-gradient(180deg, #c9d1db 40%, transparent 99%);
-
-	gradient red resources: linear-gradient(-180deg, rgba(254,12,15,.8) 30%, rgba(254,12,15,0) 99%);
-
-	navigation box-shadow: -2px -2px 20px rgba(248, 248, 255,.7),
-		6px 6px 20px rgba(109,126,146,.5) inset,
-		-6px -6px 10px rgba(248, 248, 255,.7) inset,
-		6px 6px 10px rgba(109, 126, 146, .5);
+	new red: red;
 
 */
 
@@ -32,1915 +21,853 @@
 	box-sizing: border-box;
 }
 
+.row {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
 body {
-	background-color: #AECAD7;
-/*	font-family: 'Antic Didone', serif;*/
-	font-family: 'Arima Madurai', sans-serif;
+	background-color: #333;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	color: white;
 }
 
-a:focus, a:hover {
+article, aside, footer, header, nav, section {
+    display: block;
+}
+
+h1 {
+	font-family: 'Alice', serif;
+	font-size: 11.5vh;
+	font-weight: 100;
+	letter-spacing: 2px;
+	color: #fff;
+	text-shadow: 3px 2px 3px black;
+}
+
+h2 {
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 2.75vw;
+	font-weight: 400;
+    line-height: 1.2;
+	color: #fff;
+	text-shadow: 2px 2px 2px rgb(0,0,0);
+}
+
+h3 {
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 3vw;
+	font-weight: lighter;
+	line-height: 1.2;
+	color: #f00;
+    text-shadow: 1px 0px 0px #f00, 1px 1px 4px rgba(0,0,0,.4);
+	margin: 5px 0px;
+}
+
+p {
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 2.4vh;
+    font-weight: 200;
+    line-height: 1.3;
+	letter-spacing: .25px;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    margin-bottom: 20px;
+}
+
+a {
 	text-decoration: none;
 }
+
+p a {
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 2.4vh;
+	font-weight: 200;
+	line-height: 1.2;
+	color: khaki;
+	text-shadow: 2px 2px 3px black;
+	margin-bottom: 20px;
+}
+
+p a:hover {
+	color: #f00;
+}
+
+a:focus, a:hover, a:active {
+	text-decoration: none;
+}
+
+li {
+		font-family: 'Proza Libre', sans-serif;
+	    text-shadow: 1px 1px 4px black;
+		margin: 10px 0px;
+}
+
+img {
+    vertical-align: middle;
+	border-style: none;
+}
+
+/* ----- End General Elements ----- */
 
 #Wrapper {
 	width: 100%;
 }
 
+/* ----- Navigation ----- */
+
 #NavButtonBar {
 	padding: 0px;
 }
 
+.fixed-top {
+    /* width: 75.2%; */
+    left: 24.8%;
+}
+
+.navbar-nav {
+    background-color: #333;
+	width: 100%;
+}
+
+.navbar-nav h2 {
+	margin: 0;
+}
+
+.navbar-nav h2 a {
+
+}
+
 #SiteTitleBar {
-	margin-right: 0px;
-	font-family: 'Poiret One', cursive;
+    margin-right: 0px;
+    font-family: 'Alice', serif;
 }
 
 #NavButtonBar .Button {
-	height: 150px;
+    border: .85vh solid transparent;
+    box-sizing: content-box;
+    display: flex;
+    box-shadow: none;
+    background: transparent;
 	padding-left: 1%;
-	padding-right: 1%;
-	border-top: 2px white solid;
-	color: rgb(248, 248, 255);
-	background: linear-gradient(180deg, #c9d1db 40%, transparent 99%);
-	box-shadow: -2px -2px 20px rgba(248, 248, 255,.7),
-		6px 6px 20px rgba(109,126,146,.5) inset,
-		-6px -6px 10px rgba(248, 248, 255,.7) inset,
-		6px 6px 10px rgba(109, 126, 146, .5);
+    padding-right: 1%;
+	justify-content: center;
 }
 
-#LinkContainer {
-	width: 100%;
+#NavButtonBar .Button.Red {
+    border-bottom: .85vh solid #f00;
+    transition: all .3s;
 }
 
-.Button a, .Button a:link {
+#NavButtonBar .Button a {
+    font-family: 'Proza Libre', sans-serif;
+	font-size: 2.2vw;
+    font-weight: 400;
+	line-height: 1.15;
+	color: #fff;
+	text-shadow: 2px 2px 2px rgb(0,0,0);
+	display: flex;
+	align-items: flex-end;
+}
+
+#NavButtonBar .Button:hover a {
+    color: #5960d6;
+    transition: all .2s;
+}
+
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+[role=button], a, area, button, input, label, select, summary, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+/* ----- Main Logo ----- */
+
+#SiteTitle a {
 	display: block;
+    position: fixed;
+	top: 0;
+	width: calc(25% - 2px);
+	font-family: 'Alice', serif;
+    font-size: 11.5vh;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 3px 2px 3px black;
+	line-height: 1.15;
 	text-decoration: none;
-	padding-top: 30px;
-	color: white;
-	font-family: 'Poiret One', cursive;
-	font-weight: 700;
-	font-size: 52px;
-	line-height: 48px;
-	text-align: center;
-	text-shadow: 2px 2px 4px rgb(0,0,0);
-}
-
-#NavButtonBar .Button:hover {
-	background-color: rgba(154,163,175,.7);
-	font-weight: 700;
-	text-shadow: 2px 2px 4px rgba(46,55,69,.8);
-}
-
-#NavButtonBar .Button:active {
-	background: linear-gradient(180deg, #990000 40%, transparent 99%);
-	font-weight: 700;
-	text-shadow: 2px 2px 4px rgba(46,55,69,.8);
-}
-
-#NavButtonBar .Red {
-	background: linear-gradient(180deg, #990000 40%, transparent 99%);
-	font-weight: 700;
-	text-shadow: 2px 2px 4px rgba(46,55,69,.8);
-}
-
-header {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-}
-
-#HeaderArticle {
-	height: 100vh;
-	background-image: linear-gradient(to right, transparent 60%, rgba(26,47,66,.85) 80%), url(Images/IpanimaHomePage.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-
-header img {
-	display: none;
-}
-
-#SiteTitle a{
-	font-family: 'Poiret One', cursive;
-	display: block;
-	position: fixed;
-	top: 200px;
-	width: 25%;
-	padding-left: 2%;
-	text-decoration: none;
-	font-size: 150px;
-	color: white;
-	font-weight: 100;
-	text-shadow: 6px 4px 6px black;
+	padding: 10px 0 2% 2.5%;
+	background: linear-gradient(180deg, #333 90%, transparent);
 	z-index: 50;
 }
 
-h2 {
-	font-family: 'Poiret One', cursive;
-	display: block;
-	font-size: 93px;
-	font-weight: 100;
-	margin-bottom: 30px;
-	margin-top: 30px;
+ /* ----- Site Intro ----- */
+
+ header {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	width: 100%;
+    height: auto;
+    min-height: 100vh;
 }
 
-h3 {
-	font-family: 'Poiret One', cursive;
-	display: block;
-	font-size: 73px;
-	font-weight: 700;
-	margin: 20px 0px;
-	color: red;
-	text-shadow: 2px 1px 2px red,
-	4px 4px 6px black;
+header img {
+    display: none;
 }
 
 #WhatsNew {
-	margin: 0 0 0 25%;
-	width: 75%;
-	height: 100vh;
-	padding: 200px 2% 100px 52%;
+    width: 25%;
+    margin: 0;
+    min-height: 100vh;
+	padding: 44vh 2% 0 2.5%;
 }
 
-#WhatsNew p {
-	margin-bottom: 40px;
-	font-size: 2.5vh;
-	line-height: 1.1em;
-	font-weight: 200;
-	color: white;
-	text-shadow: 4px 4px 4px black;
+#HeaderArticle {
+	background-image: url(Images/IpanimaHomePage.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 75%;
+    margin: 0;
 }
 
-#WhatsNew p a {
-	font-size: 2.5vh;
-	line-height: 1.1em;
-	font-weight: 200;
-	color: khaki;
-	text-decoration: none;
-	overflow-wrap: break-word;
-	word-break: break-word;
+.Gap {
+    position: relative;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 80vh;
+    z-index: 30;
 }
 
-#WhatsNew a:hover, #About a:hover {
-	color: red;
+.GapClear {
+    display: block;
+    width: 25%;
+	height: 80vh;
+    background-color: #333;
+}
+
+.GapImage {
+    display: inline-block;
+    width: 75%;
+    height: 80vh;
+    background-image: url(Images/TrafalgarMermaid_Final.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 23vw;
 }
 
 .RedBar {
-	display: none;
+    display: none;
 }
 
-#TravelBlog {
-	position: relative;
-	height: 100vh;
-	background-image: linear-gradient(to left, transparent 60%, rgba(26,47,66,.85) 80%), url(Images/HongKong.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center bottom;
-	z-index: 100;
-}
-
-#TravelBlog img {
-	display: none;
-}
-
-#TravelBlog aside {
-	float: left;
-	width: 75%;
-	margin: 0 25% 0 0;
-	height: 100vh;
-	padding: 200px 52% 0px 2%;
-}
-
-#TravelBlog p {
-	display: block;
-	position: relative;
-	font-size: 2.5vh;
-	font-weight: 200;
-	line-height: 1.1em;
-	margin-bottom: 40px;
-	text-shadow: 4px 4px 4px black;
-}
-
-#TravelBlog p a {
-	font-size: 2.5vh;
-	color: khaki;
-	text-decoration: none;
-	overflow-wrap: break-word;
-	word-break: break-word;
-}
-
-#TravelBlog p a:hover {
-	color: red;
-}
-
-#HiddenBlogButton {
-    position: absolute;
-    top: 30vh;
-    left: 30%;
-    width: 40%;
-    height: 40vh;
-    z-index: 300;
-}
-
-#HiddenBlogLink {
-	visibility: hidden;
-	display: inline-block;
-	font-family: 'Poiret One', cursive;
-	color: white;
-	font-size: 50px;
-	text-shadow: 2px 2px 5px black;
-	text-decoration: none;
-	text-align: center;
-	width: 80%;
-	margin: 0px 10%;
-	padding: 20vh 5%;
-	background-color: rgba(26,47,66,.2);
-	border-radius: 5%;
-	box-shadow: -2px -2px 7px rgba(255,255,255,.5) inset,
-		-3px -3px 7px rgba(255,255,255,.5),
-		2px 2px 7px rgba(26,47,66,.7) inset,
-		1px 1px 7px rgba(26,47,66,.7);
-}
-
-#HiddenBlogButton:hover #HiddenBlogLink {
-	visibility: visible;
-}
-
-
-.Gap {
-	position: relative;
-	height: 100vh;
-	background-image: url(Images/TrafalgarMermaid_Final.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-	z-index: 30;
-}
+/* #GalleryJump {
+	transform: translateY(-8vh);
+} */
 
 #PhotoGallery {
-	background-image: url('Images/Alhambra_GranadaSpain.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-}
-
-#PhotoGallery img {
-	display: block;
-	width: 100%;
+    background: #333;
 }
 
 #PhotoGalleryArticle {
-	padding-top: 180px;
+    padding-top: 8vw;
+    padding-bottom: 30px;
+}
+
+#PhotoGallery img {
+    display: block;
+    width: 100%;
+}
+
+.container-fluid {
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .PhotoBar {
-	background-color: rgba(0,0,0,.5);
+	height: 40px;
+    background-color: #5960d6;
 	border-bottom: 1px solid #222;
-	box-shadow: 0px 1px 7px rgba(0,0,0,.8) inset;
 	margin-bottom: 20px;
-	height: 100px;
 }
 
 .PhotoCountry {
-	font-family: 'Poiret One', cursive;
-	font-weight: 700;
-	font-size: 47px;
-	line-height: 94px;
-	text-shadow: 1px 1px 2px black;
-	color: white;
-	text-decoration: none;
 	width: 65%;
 	float: left;
-
+    font-family: 'Proza Libre', sans-serif;
+	font-size: 25px;
+    font-weight: 100;
+    line-height: 45px;
+    color: white;
+	text-shadow: 1px 1px 2px black;
+    text-decoration: none;
 }
 
 .PhotoGo {
-	font-family: 'Poiret One', cursive;
-	font-weight: 700;
-	font-size: 47px;
-	text-shadow: 1px 1px 2px black;
-	line-height: 94px;
-	color: khaki;
-}
-
-.PhotoGo a {
-	font-family: 'Poiret One', cursive;
-	font-weight: 700;
-	font-size: 47px;
-	line-height: 94px;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 100;
+    font-size: calc(15px + .1vw);;
+    line-height: 45px;
 	text-shadow: 1px 1px 2px black;
 	color: khaki;
-	border: none;
+	text-align: right;
 }
 
 .PhotoGo:hover {
-	color: red;
-	text-shadow: 1px 1px 2px black;
-	text-decoration: none;
+	font-family: 'Proza Libre', sans-serif;
+	font-weight: 100;
+	font-size: calc(15px + .1vw);;
+	line-height: 45px;
+    color: #f00;
+    text-shadow: 1px 1px 2px black;
+    text-decoration: none;
+	text-align: right;
 }
 
 .Soon {
-	font-size: 37px;
-	line-height: 50px;
-	font-weight: 400;
-	text-decoration: none;
-	text-shadow: 1px 1px 2px black;
-	color: #ccc;
+    font-family: 'Proza Libre', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 4px;
+    color: white;
+}
+
+#ResourcesJump {
+	transform: translateY(-60px);
 }
 
 #ResourcesSection {
 	position: relative;
-	width: 100%;
-	height: 100vh;
-	z-index: 45;
+	    display: flex;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+	    width: 100%;
+	    z-index: 45;
+}
+
+/* #ResourcesSection img {
+	display: none;
+} */
+
+#ResourcesAside {
+	width: 25%;
+	min-height: 100vh;
+    padding-bottom: 1%;
+	margin-left: 0;
 }
 
 #ResourcesArticle {
-	width: 100%;
-	height: 100vh;
+    min-height: 100vh;
+	width: 75%;
 	background-image: url(Images/DenverBGChihuly.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
-}
-
-#ResourcesSection img {
-	display: none;
-}
-
-#ResourcesAside {
-	display: block;
-	float: right;
-	width: 75%;
-	height: 100vh;
-	margin-left: 25%;
-	margin-right: 0px;
-	padding-top: 250px;
-}
-
-#ResourcesAside ul{
-	padding: 0px;
-}
-
-#ResourcesAside .ResourceClass {
-	display: block;
-	width: 100%;
-	padding: 40px;
-	margin-bottom: 15%;
-	background: linear-gradient(-180deg, rgba(254,12,15,.8) 30%, rgba(254,12,15,0) 99%);
-	color: white;
-	text-shadow: 3px 3px 5px #000;
-	font-family: 'Poiret One', cursive;
-	font-weight: 700;
-	font-size: 5vh;
+	padding-top: 60px;
 }
 
 #LeftResources {
-	float: left;
-	width: 40%;
-	margin: 0px 5%;
+    width: 80%;
+    margin: 0px 10%;
 }
 
-#RightResources {
-	float: left;
-	width: 40%;
-	margin: 0px 5%;
+#LeftResources ul {
+	padding: 30px 40px;
+	background-color: rgba(255, 0, 0, .65);
+	margin-bottom: 60px;
 }
 
-.ResourceClass a {
+#LeftResources ul li {
+	font-size: 4.7vh;
+    color: khaki;
+    list-style: none;
+}
+
+#LeftResources ul li ul {
+	padding: 0;
+	background-color: transparent;
+	margin-bottom: 0;
+}
+
+#LeftResources ul li ul li a {
 	font-size: 4vh;
-	line-height: 4vh;
-	margin-bottom: 2vh;
-	color: khaki;
-	text-decoration: none;
-}
-
-.ResourceClass a:hover {
-	font-weight: 700;
-	font-size: 4vh;
-	line-height: 4vh;
-	margin-bottom: 2vh;
-	color: red;
-	text-shadow: -1px -1px 1px #fff;
-	text-shadow: 2px 2px 5px #000;
-}
-
-.ItemClass {
-	display: block;
-	font-family: 'Poiret One', cursive;
-	font-size: 4vh;
-	line-height: 4vh;
-	margin-bottom: 2vh;
+	color: white;
 	padding-left: 40px;
-	color: white;
-	list-style-type: none;
 }
 
-.ItemClass a {
-	font-family: 'Poiret One', cursive;
-	font-size: 4vh;
-	line-height: 4vh;
-	margin-bottom: 2vh;
+#LeftResources ul li ul li a:hover {
 	color: khaki;
-	list-style-type: none;
 }
 
-.ItemClass a:hover {
-	font-family: 'Poiret One', cursive;
-	font-size: 4vh;
-	line-height: 4vh;
-	margin-bottom: 2vh;
-	color: red;
-	font-weight: 700;
-	list-style-type: none;
+#BlogJump {
+	transform: translateY(-1vh);
 }
 
-#ComboBottom {
+#TravelBlog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 	position: relative;
-	height: 94vh;
-	width: 100%;
-	z-index: 45;
+	min-height: 100vh;
+	background-color: #333;
+	z-index: 100;
 }
 
-#KSU {
-	width: 100%;
-	height: 94vh;
-	padding-top: 0px;
-	background-image: linear-gradient(to right, transparent 60%, rgba(26,47,66,.85) 80%), url(Images/ElMoradoPond.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-
-#About {
-	height: 94vh;
-	padding: 180px 2% 0px 52%;
-	margin: 0 0 0 25%;
-	width: 75%;
-}
-
-#About p {
-	margin-bottom: 40px;
-	font-size: 2.5vh;
-	line-height: 1.1em;
-	font-weight: 200;
-	color: white;
-	text-shadow: 4px 4px 4px black;
-}
-
-#About p a {
-	font-size: 2.5vh;
-	line-height: 1.1em;
-	font-weight: 200;
-	color: khaki;
-	text-decoration: none;
-	overflow-wrap: break-word;
-	word-break: break-word;
-}
-
-#KSU img {
-	display: none;
-}
-
-footer {
-	position: relative;
-	background-color: rgb(69,101,139);
-	height: 6vh;
-}
-
-footer h3 {
-    text-align: center;
-    font-weight: 700;
-    margin: 0;
-    font-size: 3vh;
-	padding: 1vh;
-}
-
-@media screen and (max-width: 2000px) and (orientation: landscape) {
-
-	#NavButtonBar .Button {
-		height: 100px;
-	}
-
-	.Button a, .Button a:link {
-		padding-top: 8%;
-		font-size: 34px;
-		line-height: 34px;
-		text-shadow: 3px 3px 3px rgb(0,0,0);
-	}
-
-	#NavButtonBar .Button:hover {
-		text-shadow: 3px 3px 3px rgba(46,55,69,.8);
-	}
-
-	#NavButtonBar .Button:active {
-		text-shadow: 3px 3px 3px rgba(46,55,69,.8);
-	}
-
-	#NavButtonBar .Red {
-		text-shadow: 3px 3px 3px rgba(46,55,69,.8);
-	}
-
-	header img {
-		display: none;
-	}
-
-	#SiteTitle a{
-		top: 150px;
-		font-size: 100px;
-		text-shadow: 5px 5px 7px black;
-	}
-
-	h2 {
-		font-size: 80px;
-		margin-bottom: 30px;
-		margin-top: 30px;
-	}
-
-	h3 {
-		font-size: 50px;
-		margin: 15px 0px;
-		text-shadow: 2px 1px 1px red,
-		3px 3px 5px black;
-	}
-
-	#WhatsNew {
-		padding: 150px 2% 0px 52%;
-	}
-
-	#TravelBlog img {
-		display: none;
-	}
-
-	.PhotoBar {
-		height: 70px;
-	}
-
-	.PhotoCountry {
-		font-size: 35px;
-		line-height: 70px;
-	}
-
-	.PhotoGo {
-		font-size: 35px;
-		line-height: 70px;
-	}
-
-	.PhotoGo a {
-		font-size: 35px;
-		line-height: 70px;
-	}
-
-	.Soon {
-		font-size: 25px;
-		line-height: 37px;
-	}
-
-	#ResourcesSection img {
-		display: none;
-		width: 100%;
-	}
-
-	#ResourcesAside {
-		padding-top: 175px;
-	}
-
-	#KSU {
-/*		height: 94vh;*/
-		padding-top: 0px;
-	}
-
-	#About {
-		padding: 180px 2% 0px 52%;
-	}
-
-}
-
-@media screen and (max-width: 1400px) and (orientation: landscape) {
-
-	#NavButtonBar .Button {
-		height: 73px;
-		border-top: 1px white solid;
-		box-shadow: -1px -1px 10px rgba(248, 248, 255,.7),
-			3px 3px 10px rgba(109,126,146,.5) inset,
-			-3px -3px 5px rgba(248, 248, 255,.7) inset,
-			3px 3px 5px rgba(109, 126, 146, .5);
-	}
-
-	.Button a, .Button a:link {
-		padding-top: 8%;
-		font-size: 24px;
-		line-height: 23px;
-		text-shadow: 2px 2px 2px rgb(0,0,0);
-	}
-
-	#NavButtonBar .Button:hover {
-		text-shadow: 1px 1px 2px rgba(46,55,69,.8);
-	}
-
-	#NavButtonBar .Button:active {
-		text-shadow: 1px 1px 2px rgba(46,55,69,.8);
-	}
-
-	#NavButtonBar .Red {
-		text-shadow: 1px 1px 2px rgba(46,55,69,.8);
-	}
-
-	header img {
-		display: none;
-	}
-
-	#SiteTitle a{
-		top: 100px;
-		font-size: 75px;
-		text-shadow: 3px 2px 3px black;
-	}
-
-	h2 {
-		font-size: 45px;
-		margin-bottom: 20px;
-		margin-top: 20px;
-	}
-
-	h3 {
-		font-size: 33px;
-		margin: 10px 0px;
-		text-shadow: 1px 0px 0px red,
-		2px 2px 3px black;
-	}
-
-	#WhatsNew {
-		padding: 100px 2% 50px 52%;
-	}
-
-	#WhatsNew p {
-		margin-bottom: 20px;
-	}
-
-	.PhotoBar {
-		height: 50px;
-	}
-
-	.PhotoCountry {
-		font-size: 25px;
-		line-height: 50px;
-	}
-
-	.PhotoGo {
-		font-size: 25px;
-		line-height: 50px;
-	}
-
-	.PhotoGo a {
-		font-size: 25px;
-		line-height: 50px;
-	}
-
-	.Soon {
-		font-size: 17px;
-		line-height: 25px;
-	}
-
-	#TravelBlog img {
-		display: none;
-	}
-
-	#TravelBlog aside {
-		padding: 100px 52% 0px 2%;
-	}
-
-	#TravelBlog p {
-		margin-bottom: 20px;
-	}
-
-	#ResourcesSection img {
-		display: none;
-	}
-
-	#ResourcesAside {
-		padding-top: 120px;
-	}
-
-	#KSU {
-		padding-top: 0px;
-	}
-
-	#About {
-		padding: 150px 2% 0px 52%;
-	}
-
-	#About p {
-		margin-bottom: 20px;
-	}
-
-}
-
-@media screen and (max-width: 1080px) and (orientation: landscape) {
-
-	#SiteTitle a {
-		font-size: 65px;
-	}
-
-	h3 {
-		font-size: 37px;
-	}
-
-	.PhotoBar {
-		height: 40px;
-	}
-
-	.PhotoCountry {
-		font-size: 12px;
-		line-height: 40px;
-	}
-
-	.PhotoGo {
-		font-size: 12px;
-		line-height: 40px;
-	}
-
-	.PhotoGo a {
-		font-size: 12px;
-		line-height: 40px;
-	}
-
-	.Soon {
-		font-size: 12px;
-		line-height: 20px;
-	}
-
-
-}
-
-@media screen and (max-width: 768px) and (orientation: landscape) {
-
-
-	#HeaderArticle #WhatsNew {
-		padding: 80px 2% 5px 52%;
-		}
-
-	#WhatsNew h3 {
-		font-size: 25px;
-	}
-
-	.PhotoBar {
-		height: 40px;
-	}
-
-	.PhotoCountry {
-		font-size: 17px;
-		line-height: 40px;
-	}
-
-	.PhotoGo {
-		font-size: 17px;
-		line-height: 40px;
-	}
-
-	.PhotoGo a {
-		font-size: 17px;
-		line-height: 40px;
-	}
-
-	.Soon {
-		font-size: 12px;
-		line-height: 20px;
-	}
-
-	#ResourcesAside {
-		padding-top: 100px;
-	}
-
-	#ResourcesAside .ResourceClass {
-		padding: 2vh 20px 2vh 20px;
-	}
-
-	#TravelBlog aside {
-		padding: 100px 52% 0px 2%;
-	}
-
-	#About {
-		padding: 100px 2% 5px 52%;
-	}
-
-	#About h3{
-		font-size: 25px;
-	}
-
-}
-
-@media (min-width: 2001px) and (orientation: portrait) {
-
-	header {
-		position: relative;
-		width: 100%;
-		height: 100vh;
-	}
-
-	#HeaderArticle {
-		height: 60vh;
-		background-image: none;
-	}
-
-	header img {
-		display: block;
-	}
-
-	#HeaderArticle img {
-		display: block;
-		object-fit: cover;
-		width: 100%;
-		height: 60vh;
-		object-position: center center;
-	}
-
-	#WhatsNew {
-		position: relative;
-		width: 100%;
-		height: 40vh;
-		margin-left: 0px;
-		padding: 10px 2% 15px 2%;
-		background-color: #929544;
-		box-shadow: 1px 1px 125px #353212 inset;
-		z-index: 100;
-	}
-
-	#WhatsNew h3 {
-		font-size: 4.5vh;
-		margin-top: 10px;
-		margin-left: 0px;
-	}
-
-	#WhatsNew p {
-		font-size: 2.3vh;
-		line-height: 1.1em;
-		margin: 1.5vh 0px;
-		font-weight: 200;
-		color: white;
-		text-shadow: 3px 3px 5px black;
-	}
-
-	#WhatsNew a {
-		font-size: 2.3vh;
-		line-height: 1.1em;
-		color: khaki;
-		font-weight: 200;
-		text-shadow: 3px 3px 5px black;
-		text-decoration: none;
-	}
-
-	#WhatsNew a:hover, #WhatsNew a:active, #WhatsNew a:focus {
-		color: red;
-		font-weight: 700;
-	}
-
-	.PhotoBar {
-		background-color: rgba(0,0,0,.5);
-		border-bottom: 1px solid #222;
-		box-shadow: 0px 1px 7px rgba(0,0,0,.8) inset;
-		margin-bottom: 20px;
-		height: 100px;
-	}
-
-	.PhotoCountry {
-		font-family: 'Poiret One', cursive;
-		font-weight: 700;
-		font-size: 47px;
-		line-height: 94px;
-		text-shadow: 1px 1px 2px black;
-		color: white;
-		text-decoration: none;
-		width: 65%;
-		float: left;
-
-	}
-
-	.PhotoGo {
-		font-family: 'Poiret One', cursive;
-		font-weight: 700;
-		font-size: 47px;
-		text-shadow: 1px 1px 2px black;
-		line-height: 94px;
-		color: khaki;
-	}
-
-	.PhotoGo a {
-		font-family: 'Poiret One', cursive;
-		font-weight: 700;
-		font-size: 47px;
-		line-height: 94px;
-		text-shadow: 1px 1px 2px black;
-		color: khaki;
-		border: none;
-	}
-
-	.PhotoGo:hover {
-		color: red;
-		text-shadow: 1px 1px 2px black;
-		text-decoration: none;
-	}
-
-	.Soon {
-		font-size: 37px;
-		line-height: 50px;
-		font-weight: 400;
-		text-decoration: none;
-		text-shadow: 1px 1px 2px black;
-		color: #ccc;
-	}
-
-
-	#ResourcesAside .ResourceClass {
-		display: block;
-		width: 100%;
-		padding: 40px;
-		margin-bottom: 15%;
-		background: linear-gradient(-180deg, rgba(254,12,15,.8) 30%, rgba(254,12,15,0) 99%);
-		color: white;
-		text-shadow: 3px 3px 5px #000;
-		font-family: 'Poiret One', cursive;
-		font-weight: 700;
-		font-size: 4vh;
-	}
-
-	.ItemClass {
-		display: block;
-		font-family: 'Poiret One', cursive;
-		font-size: 3vh;
-		line-height: 3vh;
-		margin-bottom: 2vh;
-		padding-left: 60px;
-		color: white;
-		list-style-type: none;
-	}
-
-	.ItemClass a {
-		display: block;
-		font-family: 'Poiret One', cursive;
-		font-size: 3vh;
-		line-height: 3vh;
-		margin-bottom: 2vh;
-		color: khaki;
-		list-style-type: none;
-	}
-
-	.ItemClass a:hover, .ItemClass a:active, .ItemClass a:focus {
-		color: red;
-	}
-
-	#TravelBlog {
-		position: relative;
-		height: 100vh;
-		background-image: none;
-		z-index: unset;
-	}
-
-	#TravelBlog img {
-		display: block;
-	}
-
-	#TravelBlogArticle img {
-		display: block;
-		object-fit: cover;
-		width: 100%;
-		height: 60vh;
-		object-position: center center;
-	}
-
-	#TravelBlogArticle aside {
-		position: relative;
-		width: 100%;
-		height: 40vh;
-		float: none;
-		margin: 0;
-		padding: 10px 2% 15px 2%;
-		background-color: #929544;
-		box-shadow: 1px 1px 125px #353212 inset;
-		z-index: 100;
-	}
-
-	#ComboBottom {
-		position: relative;
-		height: 94vh;
-		width: 100%;
-		z-index: unset;
-	}
-
-	#KSU {
-		width: 100%;
-    	height: 94vh;
-    	padding-top: 0px;
-    	background-image: none;
-	}
-
-	#ComboBottom img {
-		display: block;
-	}
-
-	#KSU img {
-		display: block;
-		object-fit: cover;
-		width: 100%;
-		height: 60vh;
-		object-position: center center;
-	}
-
-	#About {
-		position: relative;
-		width: 100%;
-		height: 40vh;
-		margin-left: 0px;
-		padding: 10px 2% 15px 2%;
-		background-color: #929544;
-		box-shadow: 1px 1px 125px #353212 inset;
-		z-index: 100;
-	}
-
-	#About h3 {
-		font-size: 4.5vh;
-		margin-top: 40px;
-	}
-
-	footer {
-		position: relative;
-		background-color: rgb(69,101,139);
-		height: 6vh;
-		z-index: 300;
-	}
-
-	footer h3 {
-		text-align: center;
-		font-weight: 700;
-		margin: 0;
-		font-size: 3vh;
-		padding: 1vh;
-	}
-
-
-}
-
-@media (max-width: 2000px) and (orientation: portrait) {
-
-	header {
-		position: relative;
-		width: 100%;
-		height: 100vh;
-	}
-
-	#SiteTitle {
-		font-size: 120px;
-	}
-
-	#HeaderArticle {
-		height: 50vh;
-		background-image: none;
-	}
-
-	header img {
-		display: block;
-	}
-
-	#HeaderArticle img {
-		display: block;
-		object-fit: cover;
-		width: 100%;
-		height: 50vh;
-		object-position: center center;
-	}
-
-	#WhatsNew {
-		position: relative;
-		width: 100%;
-		height: 50vh;
-		margin: 0px;
-		padding: 20px 2% 15px 2%;
-		background-color: #929544;
-		box-shadow: 1px 1px 125px #353212 inset;
-		z-index: 100;
-	}
-
-	#WhatsNew h3 {
-		font-size: 3vh;
-	}
-
-	#WhatsNew p {
-		font-size: 2.1vh;
-		line-height: 1.1em;
-		margin: 1.5vh 0px;
-		font-weight: 200;
-		color: white;
-		text-shadow: 3px 3px 5px black;
-	}
-
-	#WhatsNew a {
-		font-size: 2.1vh;
-		line-height: 1.1em;
-		color: khaki;
-		font-weight: 200;
-		text-shadow: 3px 3px 5px black;
-		text-decoration: none;
-	}
-
-	#WhatsNew a:hover, #WhatsNew a:active, #WhatsNew a:focus {
-		color: red;
-	}
-
-	#ResourcesAside .ResourceClass {
-		display: block;
-		width: 100%;
-		padding: 40px;
-		margin-bottom: 15%;
-		background: linear-gradient(-180deg, rgba(254,12,15,.8) 30%, rgba(254,12,15,0) 99%);
-		color: white;
-		text-shadow: 3px 3px 5px #000;
-		font-family: 'Poiret One', cursive;
-		font-weight: 700;
-		font-size: 2.7vh;
-	}
-
-	.PhotoCountry {
-		font-family: 'Poiret One', cursive;
-		font-weight: 700;
-		font-size: 35px;
-		line-height: 94px;
-		text-shadow: 1px 1px 2px black;
-		color: white;
-		text-decoration: none;
-		width: 65%;
-		float: left;
-	}
-
-	.PhotoGo {
-		font-family: 'Poiret One', cursive;
-		font-weight: 700;
-		font-size: 35px;
-		text-shadow: 1px 1px 2px black;
-		line-height: 94px;
-		color: khaki;
-	}
-
-	.PhotoGo a {
-		font-family: 'Poiret One', cursive;
-		font-weight: 700;
-		font-size: 35px;
-		line-height: 94px;
-		text-shadow: 1px 1px 2px black;
-		color: khaki;
-		border: none;
-	}
-
-	.PhotoGo:hover {
-		color: red;
-		text-shadow: 1px 1px 2px black;
-		text-decoration: none;
-	}
-
-	.Soon {
-		font-size: 23px;
-		line-height: 50px;
-		font-weight: 400;
-		text-decoration: none;
-		text-shadow: 1px 1px 2px black;
-		color: #ccc;
-	}
-
-	.ItemClass {
-		display: block;
-		font-family: 'Poiret One', cursive;
-		font-size: 2vh;
-		line-height: 3vh;
-		margin-bottom: 2vh;
-		padding-left: 60px;
-		color: white;
-		list-style-type: none;
-	}
-
-	.ItemClass a {
-		display: block;
-		font-family: 'Poiret One', cursive;
-		font-size: 2vh;
-		line-height: 3vh;
-		margin-bottom: 2vh;
-		color: khaki;
-		list-style-type: none;
-	}
-
-	.ItemClass a:hover, .ItemClass a:active, .ItemClass a:focus {
-		color: red;
-	}
-
-	#TravelBlog {
-		position: relative;
-		height: 100vh;
-		background-image: none;
-		z-index: unset;
-	}
-
-	#TravelBlog img {
-		display: block;
-	}
-
-	#TravelBlogArticle img {
-		display: block;
-		object-fit: cover;
-		width: 100%;
-		height: 50vh;
-		object-position: center center;
-	}
-
-	#TravelBlogArticle aside {
-		position: relative;
-		width: 100%;
-		height: 50vh;
-		float: none;
-		margin: 0;
-		padding: 20px 2% 15px 2%;
-		background-color: #929544;
-		box-shadow: 1px 1px 125px #353212 inset;
-		z-index: 100;
-	}
-
-	#TravelBlogArticle aside p {
-		font-size: 2.1vh;
-		line-height: 1.1em;
-		margin: 1.5vh 0px;
-		font-weight: 200;
-		color: white;
-		text-shadow: 3px 3px 5px black;
-	}
-
-	#TravelBlogArticle aside p a {
-		font-size: 2.1vh;
-		line-height: 1.1em;
-		color: khaki;
-		font-weight: 200;
-		text-shadow: 3px 3px 5px black;
-		text-decoration: none;
-	}
-
-	#HiddenBlogButton {
-		display: none;
-	}
-
-	#ComboBottom {
-		position: relative;
-		height: 94vh;
-		width: 100%;
-		z-index: unset;
-	}
-
-	#KSU {
-		width: 100%;
-    	height: 94vh;
-    	padding-top: 0px;
-    	background-image: none;
-	}
-
-	#ComboBottom img {
-		display: block;
-	}
-
-	#KSU img {
-		display: block;
-		object-fit: cover;
-		width: 100%;
-		height: 47vh;
-		object-position: center center;
-	}
-
-	#About {
-		position: relative;
-		width: 100%;
-		height: 47vh;
-		margin: 0px;
-		padding: 20px 2% 15px 2%;
-		background-color: #929544;
-		box-shadow: 1px 1px 125px #353212 inset;
-		z-index: 100;
-	}
-
-	#About h3 {
-		font-size: 3vh;
-	}
-
-	#About p {
-		font-size: 2.1vh;
-		line-height: 1.1em;
-		color: white;
-		font-weight: 200;
-		text-shadow: 3px 3px 5px black;
-		text-decoration: none;
-	}
-
-	#About p a {
-		font-size: 2.1vh;
-		line-height: 1.1em;
-		color: khaki;
-		font-weight: 200;
-		text-shadow: 3px 3px 5px black;
-		text-decoration: none;
-	}
-
-	footer {
-		position: relative;
-		background-color: rgb(69,101,139);
-		height: 6vh;
-		z-index: 300;
-	}
-
-	footer h3 {
-		text-align: center;
-		font-weight: 700;
-		margin: 0;
-		font-size: 3vh;
-		padding: 1vh;
-	}
-
-}
-
-@media (max-width: 1400px) and (orientation: portrait) {
-
-	#NavButtonBar .Button {
-    	height: 90px;
-	}
-
-
-	.Button a, .Button a:link {
-		padding-top: 20px;
-		color: white;
-		font-size: 27px;
-		line-height: 27px;
-	}
-
-	#SiteTitle a {
-		top: 150px;
-		font-size: 75px;
-}
-
-	#HeaderArticle {
-		height: 50vh;
-		background-image: none;
-	}
-
-	header img {
-		display: block;
-	}
-
-	#WhatsNew h3 {
-		font-size: 3vh;
-	}
-
-	#WhatsNew p {
-		font-size: 2.1vh;
-		line-height: 1.1em;
-		margin: 1.5vh 0px;
-	}
-
-	#WhatsNew p a {
-		font-size: 2.1vh;
-		line-height: 1.1em;
-		color: khaki;
-	}
-
-	#WhatsNew a:hover, #WhatsNew a:active, #WhatsNew a:focus {
-		color: red;
-	}
-
-	.PhotoBar {
-		height: 75px;
-	}
-
-	.PhotoCountry {
-		font-size: 23px;
-		line-height: 75px;
-	}
-
-	.PhotoGo {
-		font-size: 23px;
-		line-height: 75px;
-	}
-
-	.PhotoGo a {
-		font-size: 23px;
-		line-height: 75px;
-	}
-
-
-	.Soon {
-		font-size: 17px;
-		line-height: 37px;
-	}
-
-	#ResourcesAside .ResourceClass {
-		font-size: 2.5vh;
-		padding: 30px;
-	}
-
-	.ItemClass {
-		font-size: 2vh;
-		line-height: 2vh;
-		margin-bottom: 3vh;
-		padding-left: 30px;
-	}
-
-	.ItemClass a {
-		font-size: 2vh;
-		line-height: 3vh;
-		margin-bottom: 2vh;
-		color: khaki;
-		list-style-type: none;
-	}
-
-	.ItemClass a:hover, .ItemClass a:active, .ItemClass a:focus {
-		color: red;
-	}
-
-	#TravelBlog {
-		position: relative;
-		height: 100vh;
-		background-image: none;
-		z-index: unset;
-	}
-
-	#TravelBlog img {
-		display: block;
-	}
-
-	#TravelBlogArticle img {
-		display: block;
-		object-fit: cover;
-		width: 100%;
-		height: 50vh;
-		object-position: center center;
-	}
-
-	#TravelBlogArticle aside {
-		position: relative;
-		width: 100%;
-		height: 50vh;
-		float: none;
-		z-index: 100;
-	}
-
-
-	#HiddenBlogButton {
-		display: none;
-	}
-
-}
-
-@media screen and (max-width: 650px) {
-
-	header {
-		background-image: none;
-		width: 100%;
-		height: 100vh;
-		z-index: 10;
-	}
-
-	#NavButtonBar .Button {
-		height: 73px;
-		background: linear-gradient(180deg, #c9d1db 60%, transparent 99%);
-	}
-
-	#SiteTitle a {
-		display: none;
-	}
-
-	#SiteTitleBar {
-		background: linear-gradient(180deg, #c9d1db 45%, rgba(109, 126, 146, .8) 99%);
-		box-shadow: -1px -1px 10px rgba(248, 248, 255,.7),
-			3px 3px 10px rgba(109,126,146,.5) inset,
-			-3px -3px 5px rgba(248, 248, 255,.7) inset,
-			3px 3px 5px rgba(109, 126, 146, .7);
-		font-size: 30px;
-		font-weight: 700;
-		height: 55px;
-		padding: 3px 0px 3px 20px;
-		margin-bottom: 0;
-	}
-
-	.navbar-brand a {
-		position: fixed;
-		top: 0px;
-		color: white;
-		font-size: 32px;
-		text-decoration: none;
-		text-shadow: 2px 2px 4px rgb(0,0,0);
-	}
-
-	#Hamburger {
-		color: white;
-		font-weight: 100;
-		font-size: 25px;
-		transform: rotate(90deg);
-		padding-left: 10px;
-		padding-top: 10px;
-		right: 0px;
-	}
-
-	header img {
-		position: relative;
-		top: 0px;
-		margin-top: 35px;
-		left: 0px;
-		display: block;
-		width: 100%;
-		height: auto;
-	}
-
-	#WhatsNew, #About {
-		position: relative;
-		width: 100%;
-		margin-left: 0px;
-		height: auto;
-		padding: 10px 2% 15px 2%;
-		background-color: #929544;
-		box-shadow: 1px 1px 125px #353212 inset;
-		z-index: 100;
-	}
-
-	#WhatsNew h3 {
-		font-size: 25px;
-		margin-top: 0px;
-		margin-left: 0px;
-	}
-
-	#WhatsNew p {
-		font-size: 13pt;
-		line-height: 14pt;
-		margin: 10px 0px;
-		font-weight: 100;
-		color: white;
-		text-shadow: 1px 1px 2px black;
-	}
-
-	#WhatsNew a {
-		font-size: 13pt;
-		line-height: 14pt;
-		color: khaki;
-		font-weight: 100;
-		text-shadow: 1px 1px 2px black;
-		text-decoration: none;
-	}
-
-	#WhatsNew a:hover {
-		color: red;
-		font-weight: 700;
-	}
-
-	div#BarPhotoGallery {
-		margin-top: -50px;
-	}
-
-	#PhotoGalleryArticle {
-		padding-top: 80px;
-		padding-bottom: 30px;
-	}
-
-	#BlogJump {
-		display: block;
-		position: relative;
-		top: -53px;
-	}
-
-	div .RedBar {
-		display: block;
-		position: relative;
-		background: linear-gradient(180deg, rgba(255,0,0, .8) 25%, #990000 75%, rgba(255,0,0, .6));
-		height: 53px;
-		width: 100%;
-		font-size: 24px;
-		line-height: 53px;
-		font-weight: 700;
-		text-shadow: 2px 2px 4px rgba(46,55,69,.8);
-		color: khaki;
-		border-bottom: 1px solid red;
-		border-top: 1px solid red;
-		padding-left: 40px;
-		z-index: 1000;
-	}
-
-	#TravelBlog {
-		position: relative;
-		width: 100%;
-		height: auto;
-		background-image: none;
-		z-index: 100;
-		}
-
-	#TravelBlogArticle {
-		margin-top: 0px;
-	}
-
-	#TravelBlog img {
-		display: block;
-		position: relative;
-		margin-top: -50px;
-		width: 100%;
-	}
-
-	#TravelBlog aside {
-		position: relative;
-		float: none;
-		width: 100%;
-		height: auto;
-		margin-left: 0px;
-		padding: 10px 2% 15px 2%;
-		background-color: #929544;
-		box-shadow: 1px 1px 125px #353212 inset;
-		overflow: hidden;
-	}
-
-	#TravelBlog p {
-		font-size: 13pt;
-		line-height: 14pt;
-		margin: 10px 0px;
-		font-weight: 100;
-		color: white;
-		text-shadow: 1px 1px 2px black;
-	}
-
-	#TravelBlog a {
-		font-size: 13pt;
-		line-height: 16pt;
-		}
-
-	#HiddenBlogButton {
-		display: none;
-	}
-
-	#HiddenBlogLink {
-		display: none;
-	}
-
-	.Gap {
-		display: none;
-	}
-
-	#GalleryJump {
-		display: block;
-		position: relative;
-		top: -53px;
-	}
-
-	#ResourcesJump {
-		display: block;
-		position: relative;
-		top: -53px;
-	}
-
-	#ResourcesSection {
-		position: relative;
-		margin-top: -50px;
-		background-image: url(Images/DenverBGChihuly.jpg);
-		background-size: cover;
-		background-position: center center;
-		height: 850px;
-		overflow: hidden;
-		z-index: 100;
-	}
-
-	#ResourcesAside {
-		position: relative;
-		width: 100%;
-		padding: 100px 0px 50px 0px;
-	}
-
-	#LeftResources {
-		float: left;
-		width: 40%;
-		min-width: 190px;
-		margin: 0px 5%;
-	}
-
-	#RightResources {
-		float: left;
-		width: 40%;
-		min-width: 190px;
-		margin: 0px 5%;
-	}
-
-	#ResourcesAside ul{
-		padding: 0px;
-	}
-
-	#ResourcesAside .ResourceClass {
-		display: block;
-		width: 100%;
-		padding: 20px;
-		margin-bottom: 5%;
-		background: linear-gradient(-180deg, rgba(254,12,15,.8) 30%, rgba(254,12,15,0) 99%);
-		color: #E7F379;
-		text-shadow: 1px 1px 3px #233231;
-		font-family: 'Yeseva One', cursive;
-		font-size: 24px;
-	}
-
-	.ResourceClass a {
-		font-size: 22px;
-		line-height: 31px;
-		color: khaki;
-		text-decoration: none;
-	}
-
-	.ResourceClass a:hover {
-		font-weight: 700;
-	}
-
-	.ItemClass {
-		display: block;
-		font-family: 'Poiret One', cursive;
-		font-size: 22px;
-		line-height: 31px;
-		margin-bottom: 10px;
-		padding-left: 20px;
-		color: white;
-		list-style-type: none;
-	}
-
-	.ItemClass a {
-		font-family: 'Poiret One', cursive;
-		font-size: 22px;
-		line-height: 31px;
-		color: khaki;
-		list-style-type: none;
-	}
-
-	.ItemClass a:hover {
-		font-family: 'Poiret One', cursive;
-		font-size: 22px;
-		line-height: 31px;
-		color: khaki;
-		font-weight: 700;
-		list-style-type: none;
-	}
-
-		#KSUJump {
-		display: display;
-		position: relative;
-		top: -53px;
-	}
-
-	#ComboBottom {
-		width: 100%;
-		height: 100vh;
-		margin-top: -50px;
-	}
-
-	#KSU {
-		background-image: none;
-		width: 100%;
-		height: 47vh;
-		padding-top: 100px;
-		z-index: -2;
-	}
-
-	#KSU img {
-		display: block;
-		width: 100%;
-		position: relative;
-		top: -50px;
-	}
-
-	#KSU aside {
-		display: block;
-		position: relative;
-		top: -50px;
-	}
-
-	#About {
-		height: 50vh;
-	}
-
-	footer {
-		position: relative;
-		background-color: rgb(69,101,139);
-		z-index: 100;
-		height: 6vh;
-		width: 100%;
-		margin-top: -20px;
-		padding-top: 0px;
-	}
-
-	footer h3 {
-		position: relative;
-		width: 100%;
-		font-size: 3vh;
-		padding-top: 1vh;
-		color: red;
-		font-size: 19px;
-		font-weight: 700;
-		text-decoration: none;
-		text-align: center;
-	}
-
-}
-
-@media screen and (max-width: 500px) {
-
-	#ResourcesAside {
-		position: relative;
-		width: 100%;
-		padding: 100px 0px 50px 0px;
-	}
-
-	#LeftResources {
-		width: 70%;
-		min-width: 190px;
-		margin: 0px 15%;
-	}
-
-	#RightResources {
-		width: 70%;
-		min-width: 190px;
-		margin: 0px 15%;
-	}
-
-}
-
-@media screen and (max-width: 330px) {
-
-	footer h3 {
-		font-size: 20px;
-	}
-
-}
-
-/* Revision of h2 to recenter */
-
-.GalleryPageBackground h2 {
-    width: 65%;
-    float: right;
-    margin-right: 10%;
-}
-
-/* Minor Repainting for Interim Version */
-
-body {
-    background-color: #333;
-}
-
-.fixed-top {
-    width:  75%;
-    left: 25%;
-}
-
-#SiteTitle a {
-    top: 10px;
-}
-
-/* #LinkContainer {
-    height: 73px;
-    background: linear-gradient(180deg, #c9d1db 40%, transparent 99%);
-    border-top: none;
-    box-shadow: -1px -1px 10px rgba(248, 248, 255,.7),
-        3px 3px 10px rgba(109,126,146,.5) inset,
-        -3px -3px 5px rgba(248, 248, 255,.7) inset,
-        3px 3px 5px rgba(109, 126, 146, .5);
-} */
-
-#NavButtonBar .Button {
-    height: 73px;
-    border-top: none;
-    box-shadow: none;
-    background: transparent;
-    border: 3px groove transparent;
-    box-sizing: content-box;
-    }
-
-#NavButtonBar .Button:hover {
-    border: 3px groove rgba(255, 255, 255, .5);
-    box-sizing: content-box;
-    background: transparent;
-    box-shadow: 1px 1px 10px rgba(248, 248, 255,.7),
-        3px 3px 10px rgba(109,126,146,.5) inset,
-        3px 3px 5px rgba(248, 248, 255,.7) inset,
-        3px 3px 5px rgba(109, 126, 146, .5);
-}
-
-#HeaderArticle {
-    background-image: url(Images/IpanimaHomePage.jpg);
-    width: 75%;
-    margin-left: 25%
-}
-
-#WhatsNew {
-    padding: 240px 2% 50px 2.5%;
-    margin-left: -33%;
-    width: 25vw;
-}
-
-#WhatsNew h3 {
+#TravelBlog img {
     display: none;
 }
 
-#PhotoGallery {
-    background: linear-gradient(135deg, #f6ffff 30%, #B5A162);
+#TravelBlog aside {
+    width: 25%;
+	min-height: 100vh;
+    margin: 0;
+    padding: 150px 1.5% 0;
+    background-color: #333;
 }
 
-.Gap {
-    height: 100vh;
+#TravelBlog article {
+    width: 75%;
+    background-image: url(Images/HongKong.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#KSUJump {
+	transform: translateY(0);
+}
+
+#ComboBottom {
+    display: flex;
+    position: relative;
+    min-height: 94vh;
+    width: 100%;
+    z-index: 45;
+    background-image: none;
+    background-color: #333;
+}
+
+#ComboBottom img {
+    display: none;
+}
+
+#About {
+    min-height: 94vh;
+    padding: 47vh 2% 0 2.5%;
+    margin: 0;
+    width: 25%;
+}
+
+#KSU {
+    width: 75%;
+    min-height: 94vh;
+    padding-top: 0px;
+    background-image: url(Images/ElMoradoPond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+footer {
+    position: relative;
+    background-color: #5960d6;
+    height: 6vh;
+}
+
+footer h3 {
+    font-family: 'Proza Libre', sans-serif;
+	text-align: center;
+    font-weight: 700;
+    margin: 0;
+    font-size: 3vh;
+    padding: 1vh;
+	color: khaki;
+	text-shadow: 1px 1px 2px black;
+}
+
+@media (orientation: portrait) and (min-width: 651px) {
+
+	.row {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+
+	p {
+        font-size: 1.5vh;
+        line-height: 1.5;
+        letter-spacing: .25px;
+    }
+
+    p a {
+        font-size: 1.5vh;
+        font-weight: 200;
+        line-height: 1.5;
+    }
+
+	#NavButtonBar .Button {
+	    border: .45vh solid transparent;
+	}
+
+	#NavButtonBar .Button.Red {
+	    border-bottom: .45vh solid #f00;
+	}
+
+    #SiteTitle a {
+        font-size: 7vw;
+    }
+
+    #WhatsNew {
+        width: 25%;
+        margin: 0;
+        min-height: 100vh;
+        padding: 24vh 2% 0 2.5%;
+    }
+
+    .Gap {
+        height: 25vh;
+     }
+
+    .GapClear {
+        height: 25vh;
+    }
+
+    .GapImage {
+        height: 25vh;
+        background-position: 0;
+    }
+
+    #LeftResources ul li ul li a {
+        font-size: 3vh;
+        color: white;
+        margin-left: 40px;
+        margin-bottom: 40px;
+        display: block;
+    }
+
+    #TravelBlog aside {
+        padding: 17vh 1.5% 0;
+    }
+
+    #About {
+        padding: 24vh 2% 0 2.5%;
+    }
+
+    footer {
+        background-color: #5960d6;
+    }
+
+    footer h3 {
+        text-align: left;
+        margin-left: 25%;
+        font-size: 3vh;
+        padding: 1vh;
+        color: khaki
+    }
+
+}
+
+/* ################################################## */
+
+@media (orientation: portrait) and (max-width: 650px) {
+
+	nav.fixed-top {
+	    width: 100%;
+		height: unset;
+	    left:  0;
+		background-color: #333;
+	}
+
+	.navbar-toggler-right {
+	    top: 4.85vw;
+	    right: 13px;
+	}
+
+	#NavButtonBar .Button.Red {
+    border-bottom: .85vh solid transparent;
+}
+
+	#NavButtonBar .Button a {
+		font-size: 5vw;
+		color: red;
+    	padding: 7px;
+	}
+
+	#Hamburger {
+	    display: inline-block;
+	    color: white;
+	    font-weight: 100;
+	    font-size: 25px;
+	    padding-top: 5px;
+		transform: rotate(90deg);
+	}
+
+	#SiteTitle {
+	    display: none;
+	}
+
+	#SiteTitleBar {
+	    margin-right: 0px;
+	    padding-left: 4%;
+	    padding-top: 1.3%;
+	}
+
+	#SiteTitleBar a {
+	    display: inline-block;
+	    font-family: 'Alice', serif;
+	    font-size: 8.5vw;
+		line-height: 61px;
+	    color: white;
+	}
+
+	header {
+	    display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	    position: relative;
+	    width: 100%;
+	    height: unset;
+	    min-height: 100vh;
+	    z-index: 10;
+	}
+
+	header img {
+	    display: block;
+	    width: 100%;
+		margin-top: 7vh;
+	}
+
+	#WhatsNew, #About {
+	    position: relative;
+	    width: 100%;
+	    height: unset;
+	    min-height: unset;
+		display: flex;
+		flex-direction: column;
+		flex: 1 0 auto;
+	    margin-left: 0px;
+	    padding: 4%;
+		background-color: #929544;
+	    z-index: 100;
+	}
+
+	#WhatsNew p, #TravelBlog p, #ComboBottom p {
+	    font-size: 16pt;
+	    line-height: 18pt;
+	    margin: 0 0 20px 0;
+	}
+
+	#WhatsNew p a, #TravelBlog p a, #ComboBottom p a {
+		font-size: 16pt;
+	    line-height: 18pt;
+	}
+
+	.Gap {
+	    display: none;
+	}
+
+	#GalleryJump {
+		transform: translateY(-62px);
+	}
+
+	div#BarPhotoGallery {
+		    margin-top: 0;
+		}
+
+	div .RedBar {
+	    display: block;
+	    position: relative;
+	    background: red;
+	    width: 100%;
+	    font-family: 'Proza Libre', sans-serif;
+	    font-size: 7vw;
+	    font-weight: 700;
+	    color: khaki;
+	    padding-left: 4%;
+		padding-top: 7px;
+	    z-index: 1000;
+	}
+
+	#PhotoGallery {
+	    background: #333;
+	    display: flex;
+	    flex-direction: column;
+	}
+
+	#PhotoGalleryArticle {
+	    padding-top: 30px;
+	    padding-bottom: 30px;
+	}
+
+	#PhotoGallery .row {
+	    margin-left: -7px;
+	    margin-right: -7px;
+	}
+
+	.PhotoBar {
+	    height: 65px;
+	    margin-bottom: 30px;
+	}
+
+	.PhotoCountry {
+		width: 70%;
+	    font-size: 8vw;
+	    font-weight: 100;
+	    line-height: 70px;
+	}
+
+	.PhotoGo {
+	    font-size: 5vw;
+	    line-height: 70px;
+	    text-align: left;
+	}
+
+	.Soon {
+	    font-size: 5vw;
+	    line-height: 25px;
+	    padding-top: 10px;
+	}
+
+	#ResourcesJump {
+		transform: translateY(-62px);
+	}
+
+	#ResourcesSection {
+	    position: relative;
+	    margin-top: 0;
+	    background-image: none;
+	    background-size: unset;
+	    background-position: unset;
+	    height: unset;
+	    overflow: hidden;
+	    z-index: 100;
+	}
+
+	#ResourcesAside {
+	    display: none;
+	}
+
+	#ResourcesArticle {
+		height: unset;
+	    min-height: unset;
+	    width: 100%;
+	    background-image: url(Images/DenverBGChihuly.jpg);
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: top center;
+	    padding-top: 60px;
+	    padding-bottom: calc(60px - 5%);
+	}
+
+	#LeftResources {
+	    float: none;
+	    width: 80%;
+	    margin: 5% 10%;
+	}
+
+	#LeftResources ul li {
+	    font-size: 9vw;
+		font-weight: 600;
+	}
+
+	#LeftResources ul li ul li a {
+		font-family: 'Proza Libre', sans-serif;
+	    font-size: 6vw;
+		line-height: 8vw;
+	    color: white;
+		padding-left: 10px;
+	    margin-left: 10px;
+	    margin-bottom: 30px;
+	    display: block;
+	}
+
+	#BlogJump {
+		transform: translateY(-62px);
+	}
+
+	#TravelBlog {
+	    position: relative;
+	    width: 100%;
+	    height: unset;
+	    min-height: unset;
+	    background-image: none;
+	    display: flex;
+	    flex-direction: column;
+	    flex-wrap: nowrap;
+	}
+
+	#TravelBlog img {
+	    display: block;
+	    position: relative;
+	    margin-top: 0;
+	    width: 100%;
+	}
+
+	#TravelBlog aside {
+	    position: relative;
+	    float: none;
+	    width: 100%;
+	    height: unset;
+	    min-height: unset;
+	    margin-left: 0px;
+	    padding: 5%;
+	    background-color: #929544;
+	}
+
+	#TravelBlog article {
+	    display: none;
+	}
+
+	#KSUJump {
+		transform: translateY(-61px);
+	}
+
+	#ComboBottom {
+		display: flex;
+		flex-direction: column;
+	    position: relative;
+	    height: unset;
+	    min-height: unset;
+	    width: 100%;
+	    background-image: none;
+	    width: 100%;
+	}
+
+	#ComboBottom img {
+	    display: block;
+	    width: 100%;
+	}
+
+	#ComboBottom h3 {
+		/* font-size: 33px; */
+		display: none;
+	}
+
+	#KSU {
+		display: none;
+	}
+
+	footer {
+	    position: relative;
+	    background-color: #5960d6;
+	    height: 50px;
+	    width: 100%;
+	    margin-top: 0;
+	    padding-top: 0px;
+	}
+
+	footer h3 {
+	    text-align: center;
+	    margin: 0;
+	    font-size: 4vw;
+	    padding: 10px;
+	    color: khaki;
+	}
+
 }

@@ -13,7 +13,7 @@ if (window.XMLHttpRequest) {
 } else if (window.ActiveXObject) {
 	Request1 = new ActiveXObject("Microsoft.XMLHTTP");
 }
-	
+
 	if (Request1) {
 		var URL = "categories.php?category=" + optionMain;
 		Request1.open("GET", URL);
@@ -30,7 +30,10 @@ if (window.XMLHttpRequest) {
 function PopulateSubCats(subCat1, subCat2, subCat3) {
 
 	var makeCat = document.getElementById("Subcategories");
+	var hideCat = document.getElementById("Subs");
+
 	makeCat.style.visibility = "visible";
+	hideCat.classList.add("fa-angle-down");
 
 	makeCat.options[1] = new Option(subCat1);
 	makeCat.options[2] = new Option(subCat2);
@@ -89,5 +92,3 @@ function ShowSpanish() {
 	finalSpan.innerHTML = aWordArray[1];
 	finalSpan.style.visibility = "visible";
 }
-
-

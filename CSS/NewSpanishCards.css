@@ -1,0 +1,553 @@
+/*
+font-family: 'Alice', serif;
+
+font-family: 'Proza Libre', sans-serif;
+
+font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+new blue: #5960d6;
+		(89, 96, 214)
+
+new red: red;
+*/
+
+
+* {
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	background-color: #333;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	color: white;
+}
+
+article, aside, footer, header, nav, section {
+    display: block;
+}
+
+h1 {
+	font-family: 'Alice', serif;
+	font-size: 11.5vh;
+	font-weight: 100;
+	letter-spacing: 2px;
+	color: #fff;
+	text-shadow: 3px 2px 3px black;
+}
+
+h2 {
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 4vh;
+	font-weight: 400;
+    line-height: 1.2;
+	color: #fff;
+	text-shadow: 2px 2px 2px rgb(0,0,0);
+}
+
+h3 {
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 3vh;
+	font-weight: lighter;
+	line-height: 1.2;
+	color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,.4);
+	margin: 2vh 0px;
+}
+
+p {
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 2.75vh;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,.6);
+	margin: 15px 0 25px 0;
+}
+
+#SiteTitle a {
+	display: block;
+    position: fixed;
+	top: 0;
+	width: calc(25% - 2px);
+	font-family: 'Alice', serif;
+    font-size: 11.5vh;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 3px 2px 3px black;
+	line-height: 1.15;
+	text-decoration: none;
+	padding: 10px 0 2% 2.5%;
+	background: linear-gradient(180deg, #333 90%, transparent);
+	z-index: 50;
+}
+
+#Wrapper {
+	width: 100%;
+}
+
+nav.fixed-top {
+	width: 100%;
+	height: unset;
+	left:  0;
+	background-color: #333;
+}
+
+.navbar-toggler-right {
+	top: 4.85vw;
+	right: 13px;
+}
+
+#NavButtonBar .Button.Red {
+	border-bottom: .85vh solid transparent;
+}
+
+#NavButtonBar .Button a {
+	font-size: 5vw;
+	color: red;
+	padding: 7px;
+}
+
+#Hamburger {
+	display: inline-block;
+	color: white;
+	font-weight: 100;
+	font-size: 25px;
+	padding-top: 5px;
+	transform: rotate(90deg);
+}
+
+#SiteTitle {
+	display: none;
+}
+
+#SiteTitleBar {
+	margin-right: 0px;
+	padding-left: 4%;
+	padding-top: 1.3%;
+}
+
+#SiteTitleBar a {
+	display: inline-block;
+	font-family: 'Alice', serif;
+	font-size: 8.5vw;
+	line-height: 61px;
+	color: white;
+}
+
+aside {
+	display: none;
+}
+
+article {
+	background-image: url(http://www.pixelsinmyhair.com/Images/Segovia10.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top 43px center;
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	padding: 14vh 5vw 2vw 5vw;
+}
+
+#InstrID {
+	margin-bottom: 8vh;
+}
+
+#Categories, #Subcategories {
+	width: 100%;
+	appearance: none;
+	padding: 1.5vh 2vh 1vh 2vh;
+	margin-bottom: 5vh;
+    font-family: 'Proza Libre', sans-serif;
+	font-size: 2.75vh;
+	font-weight: 700;
+    color: white;
+    text-align: center;
+	background-color: rgba(255, 0, 0, .8);
+    text-shadow: 1px 1px 2px black;
+    box-shadow: -2px -2px 3px rgba(255, 255, 255, .4), 3px 3px 10px rgba(0, 0, 0, .4) inset, -3px -3px 5px rgba(255, 255, 255, .4) inset, 3px 3px 5px rgba(0, 0, 0, .4);
+}
+
+#AjaxOut {
+	flex-direction: column;
+}
+
+#LeftDiv {
+	width: 100%;
+	padding: 0 5vw;
+}
+
+.CategoryWrap {
+	position: relative;
+}
+
+.fa-angle-down:before {
+	content: "\f107";
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	color: #fff;
+	font-size: 2.75vh;
+	padding-right: 0.5em;
+	position: absolute;
+	pointer-events: none;
+	top: 1.5vh;
+	left: 91%;
+}
+
+option {
+    font-family: 'Proza Libre', sans-serif;
+    color: #2a2e53;
+    font-size: 2.5vh;
+    padding: 10px;
+    background-color: transparent;
+}
+
+#RightDiv {
+	width: 100%;
+	padding: 5vh 5vw;
+}
+
+input {
+	width: 100%;
+	padding: 1.5vh 2vh 1vh 2vh;
+	font-family: 'Proza Libre';
+	font-size: 2.5vh;
+	font-weight: 700;
+	color: white;
+	background-color: rgba(255, 0, 0, .8);
+	text-shadow: 1px 1px 2px black;
+    box-shadow: -2px -2px 3px rgba(255, 255, 255, .4), 3px 3px 10px rgba(0, 0, 0, .4) inset, -3px -3px 5px rgba(255, 255, 255, .4) inset, 3px 3px 5px rgba(0, 0, 0, .4);
+}
+
+#FinalCategory {
+	display: none;
+}
+
+.Language {
+    float: left;
+    padding-right: 11px;
+}
+
+.Word {
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 3vh;
+	line-height: .95;
+	margin: 2vh 0px 2vh 0;
+}
+
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	select::-ms-expand {
+	   display: none;
+	}
+}
+
+@media (min-width: 650px) {
+
+	article {
+	    width: 100%;
+		max-width: none;
+		padding: 11vw calc(50vw - 325px) 2vw calc(50vw - 325px);
+	    margin: 0;
+	}
+
+	.navbar-toggleable .navbar-collapse {
+	    width: 76%;
+	    height: 8.5vw;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	}
+
+	#NavButtonBar .Button a {
+	    font-size: 2.5vw;
+		color: white;
+	}
+
+	#SiteTitle {
+	    display: block;
+	    position: fixed;
+	    height: 8.5vw;
+	    top: 0;
+	    left: 0;
+	    background: linear-gradient(180deg, #333 100%, #333);
+	}
+
+	#SiteTitle a {
+	    width: 25%;
+		height: 8.5vw;
+	    font-size: 3vw;
+		background: linear-gradient(180deg, #333 100%, #333)
+	}
+
+	div#ButtonResources {
+	    border-bottom: 4px solid red !important;
+	}
+
+	h2 {
+	    padding: 0 5vw;
+	}
+
+	#InstrID {
+	    padding: 0 5vw;
+	}
+
+}
+
+@media (max-aspect-ratio: 1/1) and (min-width: 650px) and (max-width: 1440px) and (hover: none) {
+
+	.navbar-toggleable .navbar-collapse {
+		display: none !important;
+	}
+
+	nav.fixed-top {
+		width: 100%;
+		height: 7vh;
+		left:  0;
+		background-color: #333;
+	}
+
+	.navbar-toggler-right {
+		top: 3vw;
+		right: 4vw;
+		display: block !important;
+	}
+
+	#NavButtonBar .Button.Red {
+		border-bottom: .85vh solid transparent;
+	}
+
+	#NavButtonBar .Button a {
+		font-size: 5vw;
+		color: red;
+		padding: 7px;
+		line-height: 1.7;
+	}
+
+	#Hamburger {
+		display: inline-block;
+		color: white;
+		font-weight: 100;
+		font-size: 5.5vw;
+		padding-top: 5px;
+		transform: rotate(90deg);
+	}
+
+	.collapse.show {
+		display: block !important;
+		width: 100%;
+		position: fixed;
+		top: 13vw;
+	}
+
+		.navbar-nav {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical !important;
+		-webkit-box-direction: normal !important;
+		-webkit-flex-direction: column !important;
+		-ms-flex-direction: column !important;
+		flex-direction: column !important;
+		padding-left: 0;
+		margin-bottom: 0;
+		list-style: none;
+	}
+
+    div#ButtonResources {
+    	border-bottom: 4px solid transparent !important;
+    }
+
+    .hidden-sm-up {
+		display: inline-block !important;
+	}
+
+	#SiteTitle {
+		display: none;
+	}
+
+	#SiteTitleBar {
+		margin-right: 0px;
+		padding-left: 4%;
+		padding-top: 1.3%;
+	}
+
+	#SiteTitleBar a {
+		display: inline-block;
+		font-family: 'Alice', serif;
+		font-size: 8.5vw;
+		line-height: 61px;
+		color: white;
+	}
+
+	aside {
+		display: none;
+	}
+
+	article {
+		background-image: url(http://www.pixelsinmyhair.com/Images/Segovia10.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top 43px center;
+		width: 100%;
+		height: 100vh;
+		margin: 0;
+		padding: 14vh 5vw 2vw 5vw;
+	}
+
+}
+
+@supports (grid-area: auto) {
+	@media (min-aspect-ratio: 1/1) and (min-width: 650px) {
+
+		#Wrapper {
+			display: grid;
+			grid-template-columns: 25% repeat(4, 1fr);
+			grid-template-rows: auto 1fr;
+		}
+
+        #SiteTitle {
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+
+        #SiteTitle a {
+            font-size: 7.4vw;
+        }
+
+        #ButtonGallery {
+            grid-column: 2/3;
+        }
+
+        #ButtonResources {
+            grid-column: 3/4;
+        }
+
+        #ButtonHair {
+            grid-column: 4/5;
+        }
+
+        #ButtonKSU {
+            grid-column: 5/6;
+        }
+
+        aside {
+            display: none;
+        }
+
+        article {
+            grid-column: 2/6;
+            width: 100%;
+            padding: 13vw 2vw 2vw 2vw;
+        }
+
+		article h2 {
+			padding: 0 2vw;
+		}
+
+		#InstrID {
+			padding: 0 2vw;
+		}
+
+        #AjaxOut {
+        	display: flex;
+        	flex-direction: row;
+
+        }
+
+        #LeftDiv {
+			width: 100%;
+			padding: 0 3vw 0 2vw;
+		}
+
+		#Categories, #Subcategories {
+			font-size: 2vw;
+			font-weight: 400;
+		}
+
+		.fa-angle-down:before {
+			font-size: 2vw;
+		}
+
+		#CategoryDrops {
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: 8vh 15vh 8vh 15vh;
+
+		}
+
+		.CategoryWrap:first-of-type {
+			grid-row: 1/3;
+		}
+
+		#Subs {
+			grid-row: 3/5;
+		}
+
+		#FinalCategory {
+			display: none;
+		}
+
+		#RightDiv {
+			width: 100%;
+			padding: 0 2vw 0 3vw;
+			display: grid;
+			grid-template-columns: 100%;
+			grid-template-rows: 8vh 15vh 8vh 15vh;
+		}
+
+		[type="reset"], [type="submit"], button, html [type="button"] {
+			font-size: 2vw;
+			font-weight: 400;
+		}
+
+		[type="button"]:hover {
+			color: #5960d6;
+		}
+
+		#GetWrapper {
+			grid-row: 1/2;
+		}
+
+		#GetWrapper + h3 {
+			grid-column: 1/2;
+			grid-row: 2/3;
+			font-size: 2vw;
+			font-weight: lighter;
+		}
+
+		#EnglishWord {
+			grid-column: 1/2;
+			grid-row: 2/3;
+			padding-left: 9vw;
+			font-size: 2vw;
+			font-weight: lighter;
+		}
+
+		#ShowWrapper {
+			grid-row: 3/4;
+		}
+
+		#ShowWrapper + h3 {
+			grid-column: 1/2;
+			grid-row: 4/5;
+			font-size: 2vw;
+			font-weight: lighter;
+		}
+
+		#SpanishWord {
+			grid-column: 1/2;
+			grid-row: 4/5;
+			padding-left: 9vw;
+			font-size: 2vw;
+			font-weight: lighter;
+		}
+
+	}
+}

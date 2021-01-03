@@ -7,11 +7,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Expand your Spanish vocabulary with these free online flash cards.">
 <meta name="author" content="CarolSpencerPru">
-<link href="https://fonts.googleapis.com/css?family=Yeseva+One|Poiret+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=David+Libre&family=Proza+Libre&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="http://www.pixelsinmyhair.com/CSS/bootstrap.min.css">
-<link href="http://www.pixelsinmyhair.com/index.css" rel="stylesheet" type="text/css">
-<link href="http://www.pixelsinmyhair.com/CSS/SpanishCards.css" rel="stylesheet" type="text/css">
-
+<link href="../../index.css" rel="stylesheet" type="text/css">
+<link href="../../CSS/NewSpanishCards.css" rel="stylesheet" type="text/css">
+<script src="https://kit.fontawesome.com/f03a91b6c0.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -19,36 +19,32 @@
 
 <div id="Wrapper">
 <?php
-include("http://www.pixelsinmyhair.com/MainSiteMenu.inc.php");
+include("../../MainSiteMenu.inc.php");
 ?>
 
-		<div id="TitleSpacer">&nbsp;</div>
-
-		<div id="Instructions">&nbsp;</div>
-
+<aside></aside>
+<article>
+	<h2>Spanish Flash Cards</h2>
+	<div id="InstrID" class="InstClass">
+		<p>Select a category and a subcategory. Then choose Get a Word.</p>
+	</div>
+	<div id="AjaxOut">
 		<div id="LeftDiv">
-		
-			<h1>Spanish Flash Cards</h1>
-			
-			<div id="InstrID" class="InstClass">
-			
-				<h4>Select a category and a subcategory. Then choose Get a Word.</h4>	
-				
-			</div>
 
 			<form id="CategoryDrops">
+				<div class="fa-angle-down CategoryWrap">
+					<select id="Categories" onchange="GetCategories()">
+						<option value="">Select a category</option>
+						<option id="big" value="Travel">Travel</option>
+						<option value="Shopping">Shopping</option>
+					</select>
+				</div>
 
-				<select id="Categories" onchange="GetCategories()">
-					<option value="">Select a category</option>
-					<option value="Food">Travel</option>
-					<option value="TheHome">Shopping</option>
-				</select>
-
-				<h3 id="InstrSpacerH3">&nbsp;</h3>
-
-				<select id="Subcategories" style="visibility:hidden;" onchange="DisplayCategory()">
-					<option value="">Select a subcategory</option>
-				</select>
+				<div class="CategoryWrap" id="Subs">
+					<select id="Subcategories" style="visibility:hidden;" onchange="DisplayCategory()">
+						<option value="">Select a subcategory</option>
+					</select>
+				</div>
 
 			</form>
 
@@ -56,25 +52,25 @@ include("http://www.pixelsinmyhair.com/MainSiteMenu.inc.php");
 
 		<div id="RightDiv">
 
-			<p id="FinalCategory">&nbsp;</span></p> 
+			<p id="FinalCategory">&nbsp;</span></p>
 
-			<div id="InstrSpacerID" class="InstClass">&nbsp;</div>
-
-			<form>
+			<form id="GetWrapper">
 				<input type="button" id="NextButton" value="Get a Word" onclick="ShowNextWord()">
 			</form>
-			<br /><br />
-			<h3 class="Language">English: </h3>
+			<h3 class="Language">English:</h3>
 			<div class="Word" id="EnglishWord"></div>
-			<br style="clear:both;" />
-			<form>
+
+			<form id="ShowWrapper">
 				<input type="button" id="SpanButton" value="Show Spanish" onclick="ShowSpanish()">
 			</form>
-			<br /><br />
-			<h3 class="Language">Spanish: </h3>
+
+			<h3 class="Language">Spanish:</h3>
 			<div class="Word" id="SpanishWord"></div>
 
 		</div>
+
+	</div> <!-- End AjaxOut -->
+</article>
 
 	</div> <!-- End Wrapper div -->
 
@@ -82,9 +78,9 @@ include("http://www.pixelsinmyhair.com/MainSiteMenu.inc.php");
 <script src="http://www.pixelsinmyhair.com/JavaScript/utils.js"></script>
 <script src="http://www.pixelsinmyhair.com/JavaScript/tether.js"></script>
 <script src="http://www.pixelsinmyhair.com/JavaScript/bootstrap.min.js"></script>
-<script src="http://www.pixelsinmyhair.com/JavaScript/index.js"></script>
+<script src="../../JavaScript/index.js"></script>
 
-<script src="http://www.pixelsinmyhair.com/JavaScript/SpanishCards.js"></script>
+<script src="../../JavaScript/SpanishCards.js"></script>
 
 </body>
 
