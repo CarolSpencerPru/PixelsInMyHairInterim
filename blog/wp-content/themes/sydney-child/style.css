@@ -240,7 +240,7 @@ p.subtitle {
 	z-index: 50;
 }
 
-.slide-inner.text-slider-stopped {
+.roll-button {
     display: none;
 }
 
@@ -340,9 +340,9 @@ footer h3 {
 	#SiteTitleBar a {
 		position: fixed;
 		font-family: 'Alice', serif;
-		font-size: 5vw;
+		font-size: 8.5vw;
 		font-weight: 400;
-		line-height: 45px;
+		line-height: 5vw;
 		padding-top: 1vw;
 		color: white;
 		text-decoration: none;
@@ -434,7 +434,7 @@ footer h3 {
 	    background-size: contain;
 	}
 
-	.slide-inner.text-slider-stopped {
+	.roll-button {
 	    display: none;
 	}
 
@@ -496,7 +496,7 @@ footer h3 {
 	    color: white;
 	}
 
-	a.go-top.show {
+	a.go-top, a.go-top.show {
 	    display: none;
 	}
 
