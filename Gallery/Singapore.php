@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="../CSS/bootstrap.min.css">
 <link href="../index.css" rel="stylesheet" type="text/css">
 <link href="../CSS/Gallery.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Yeseva+One|Poiret+One" rel="stylesheet">  
+<link href="https://fonts.googleapis.com/css?family=Yeseva+One|Poiret+One" rel="stylesheet">
 
 
 </head>
@@ -24,24 +24,24 @@
 include("../MainSiteMenu.inc.php");
 ?>
 
-	<div id="MainWrapperRow" class="row no-gutters">
-	
-		<div id="PeelOffSiteTitle">	
+	<div id="MainWrapperRow">
+
+		<div id="PeelOffSiteTitle">
 		</div> <!-- End Columns id=PeelOffSiteTitle. This houses the logo. -->
-		
+
 		<div id="MainContentArea">
-			
-			<div id="MainPhotoDiv">
+
+			<div id="MainPhotoDiv" class="row no-gutters" style="background: url(../Images/Around/Singapore/SandsHotel.jpg)">
 
 			<h2 style="background:rgba(0,0,0,.5);">This page is under construction. Please visit again, soon.</h1>
-				
+
 			</div> <!-- End id=MainContentArea -->
 
-		
+
 		<div id="Thumbnails">
 
 		</div> <!-- End Column id=Thumbnails -->
-		
+
 	</div> <!-- End Row id=MainWrapperRow -->
 
 </div> <!-- End class=GalleryPageBackground -->

@@ -1,6 +1,14 @@
-/* 
-	font-family: 'Yeseva One', cursive;
-	font-family: 'Poiret One', cursive;
+/*
+	font-family: 'Alice', serif;
+
+    font-family: 'Proza Libre', sans-serif;
+
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+	new blue: #5960d6;
+
+	new red: red;
+
 */
 
 
@@ -11,91 +19,127 @@
 }
 
 body {
-	width: 100%;
-	background-color: #8d969e;
-	background-image: url(http://www.pixelsinmyhair.com/Images/EiffelTower.jpg);
-	background-size: cover;
-	background-position: top center;
-	background-repeat: no-repeat;
+	background-color: #333;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	color: white;
 }
 
+article, aside, footer, header, nav, section {
+    display: block;
+}
 
 h1 {
-	font-family: 'Yeseva One', cursive;
-	font-size: 50px;
-	line-height: 1.1;
-	color: white;
+	font-family: 'Alice', serif;
+	font-size: 11.5vh;
+	font-weight: 100;
+	letter-spacing: 2px;
+	color: #fff;
+	text-shadow: 3px 2px 3px black;
 }
 
 h2 {
-	font-family: 'Yeseva One', cursive;
-	line-height: 1.1;
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 2.75vw;
+	font-weight: 400;
+    line-height: 1.2;
+	color: #fff;
+	text-shadow: 2px 2px 2px rgb(0,0,0);
 }
 
 h3 {
-	font-family: 'Yeseva One', cursive;
-	font-size: 40px;
-	color: white;
-	font-weight: 100;
-	text-shadow: 5px 5px 11px black;
-	margin: 36px 0px;
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 2vw;
+	font-weight: lighter;
+	line-height: 1.2;
+	color: #fff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,.6);
+	margin: 5px 0px;
 }
 
-h4 {
-	font-family: 'Poiret One', cursive;
-	font-size: 36px;
-	color: white;
-	padding-right: 10%;
+p {
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+	font-size: 2.4vh;
+    font-weight: 200;
+    line-height: 1.3;
+	letter-spacing: .25px;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    margin-bottom: 20px;
+}
+#Header {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   height: 100vh;
 }
 
-#Instructions {
-	float: left;
-	width: 75%;
-	margin-top: 175px;
-	padding-left: 2%;
-	margin-bottom: 50px;
-}
-
-#SiteTitle a{
-	font-family: 'Poiret One', cursive;
-	display: block;
-	position: fixed;
-	top: 200px;
+aside {
 	width: 25%;
-	padding-left: 2%;
+	height: 100vh;
+	margin: 0;
+	background-color: #333;
+	padding: 44vh 2% 0 2.5%;
+}
+
+article {
+	background-image: url(/../../Images/EiffelTower.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 73px center;
+    width: 75%;
+    margin: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+#SiteTitle a {
+	display: block;
+    position: fixed;
+	top: 0;
+	width: calc(25% - 2px);
+	font-family: 'Alice', serif;
+    font-size: 11.5vh;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 3px 2px 3px black;
+	line-height: 1.15;
 	text-decoration: none;
-	font-size: 150px;
-	color: white;
-	font-weight: 100;
-	text-shadow: 6px 4px 6px black;
+	padding: 10px 0 2% 2.5%;
+	background: linear-gradient(180deg, #333 90%, transparent);
 	z-index: 50;
 }
 
 #TitleSpacer {
 	float: left;
+	background: #333;
 	width: 25%;
 	height: 100vh;
 }
 
 #LeftDiv {
-	float: left;
-	width: 25%;
+	width: 50%;
+    margin-top: 100px;
+    padding: 30px;
 }
 
 #CategoryDrops {
-	font-family: 'Poiret One', cursive;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	font-size: 36px;
 }
 
 optgroup, select, textarea {
-	font-family: 'Poiret One', cursive;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	color: white;
 	font-size: 36px;
 	line-height: 36px;
+	appearance: none;
 }
 
 option {
-	font-family: 'Poiret One', cursive;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	color: #2a2e53;
 	font-size: 36px;
 	padding: 10px;
@@ -106,26 +150,24 @@ option {
 	width: 85%;
 	background-color: transparent;
 	padding: 5px 0px 5px 0px;
-	font-family: 'Poiret One', cursive;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	color: white;
 	font-size: 36px;
 	text-align: center;
 	text-shadow: 1px 1px 2px black;
 	border: outset 3px rgba(255, 255, 255 .7);
-	box-shadow: -2px -2px 3px rgba(255, 255, 255,.8), 
+	box-shadow: -2px -2px 3px rgba(255, 255, 255,.8),
 		3px 3px 10px rgba(0,0,0,.5) inset,
 		-3px -3px 5px white inset,
 		3px 3px 5px rgba(0,0,0,.5);
 }
 
 #RightDiv {
-	float: left;
-	padding-left: 4%;
-	width: 45%;
+	width: 50%;
 }
 
 #FinalCategory {
-	font-family: 'Yeseva One', cursive;
+	font-family: 'Proza Libre', sans-serif;
 	font-size: 50px;
 	line-height: 1.1;
 	color: white;
@@ -138,14 +180,14 @@ option {
 input {
 	width: 45%;
 	padding: 13px 0px;
-	font-family: 'Poiret One', cursive;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	font-size: 36px;
 	text-align: center;
 	text-shadow: 5px 5px 11px rgb(46,55,69);
 	border: outset 5px rgba(248, 248, 255 .7);
 	color: rgb(255, 255, 255);
 	background-color: rgba(0,0,0,0);
-	box-shadow: -1px -1px 3px rgba(255, 255, 255,.8), 
+	box-shadow: -1px -1px 3px rgba(255, 255, 255,.8),
 		3px 3px 10px rgba(0,0,0,.5) inset,
 		-3px -3px 5px white inset,
 		3px 3px 5px rgba(0,0,0,.5);
@@ -164,7 +206,7 @@ input:hover {
 .Word {
 	width: 500px;
 	float: left;
-	font-family: 'Poiret One', cursive;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	font-size: 42px;
 	color: white;
 	font-weight: 100;
@@ -173,33 +215,13 @@ input:hover {
 }
 
 @media screen and (max-width: 2000px) {
-	
-	h1 {
-		font-size: 34px;
-	}
-
-	h3 {
-		font-size: 30px;
-		text-shadow: 4px 4px 9px black;
-		margin: 30px 0px;
-	}
-
-	h4 {
-		font-size: 30px;
-	}
 
 	#Instructions {
 		float: left;
 		width: 75%;
 		margin-top: 125px;
 	}
-	
-	#SiteTitle a {
-		top: 150px;
-		font-size: 100px;
-		text-shadow: 5px 5px 7px black;
-	}
-	
+
 	#CategoryDrops {
 	font-size: 30px;
 	}
@@ -207,6 +229,7 @@ input:hover {
 	optgroup, select, textarea {
 		font-size: 30px;
 		line-height: 30px;
+		appearance: none;
 	}
 
 	option {
@@ -222,7 +245,7 @@ input:hover {
 	#FinalCategory {
 		font-size: 34px;
 	}
-	
+
 		#InstrSpacerID {
 		height: 133px;
 	}
@@ -243,37 +266,18 @@ input:hover {
 		text-shadow: 1px 1px 3px black;
 		margin: 22px 0px;
 	}
-	
+
 }
 
 @media screen and (max-width: 1400px) {
-	
-	h1 {
-		font-size: 30px;
-	}
 
-	h3 {
-		font-size: 24px;
-		text-shadow: 2px 2px 5px black;
-		margin: 22px 0px;
-	}
-
-	h4 {
-		font-size: 24px;
-	}
 
 	#Instructions {
 		float: left;
 		width: 75%;
 		margin-top: 75px;
 	}
-	
-	#SiteTitle a{
-		top: 100px;
-		font-size: 75px;
-		text-shadow: 3px 2px 3px black;
-	}
-	
+
 	#CategoryDrops {
 	font-size: 24px;
 	}
@@ -296,7 +300,7 @@ input:hover {
 	#FinalCategory {
 		font-size: 30px;
 	}
-	
+
 	#InstrSpacerID {
 		height: 108px;
 	}
@@ -317,20 +321,20 @@ input:hover {
 		text-shadow: 1px 1px 3px black;
 		margin: 15px 0px;
 	}
-	
-	
+
+
 }
 
 @media screen and (max-width: 1200px) {
-	
+
 	h1 {
 		font-size: 25px;
 	}
-	
+
 	h4 {
 		font-size: 22px;
 	}
-	
+
 		#InstrSpacerID {
 		height: 92px;
 	}
@@ -338,20 +342,16 @@ input:hover {
 }
 
 @media screen and (max-width: 992px) {
-	
-	#TitleSpacer {
-		width: 50%;
-	}	
-	
+
 	h1 {
 		font-size: 26px;
 		margin-bottom: 3px;
 	}
-	
+
 	h4 {
 		font-size: 20px;
 	}
-	
+
 	h3 {
 		font-size: 20px;
 		margin: 20px 0px;
@@ -367,13 +367,7 @@ input:hover {
 		width: 50%;
 		margin-top: 50px;
 	}
-	
-	#SiteTitle a{
-		top: 100px;
-		font-size: 75px;
-		text-shadow: 3px 2px 3px black;
-	}
-	
+
 	#CategoryDrops {
 	font-size: 20px;
 	}
@@ -392,7 +386,7 @@ input:hover {
 		padding: 3px 0px 3px 0px;
 		font-size: 20px;
 	}
-	
+
 	#RightDiv {
 		float: right;
 		padding-left: 4%;
@@ -403,7 +397,7 @@ input:hover {
 	#FinalCategory {
 		display: none;
 	}
-	
+
 	#InstrSpacerID {
 		height: 60px;
 	}
@@ -425,11 +419,11 @@ input:hover {
 		text-shadow: 1px 1px 3px black;
 		margin: 15px 0px;
 	}
-	
+
 }
 
 @media screen and (max-width: 768px) {
-	
+
 	.Language {
 		width: 100px;
 		float: left;
@@ -441,19 +435,19 @@ input:hover {
 		text-shadow: 1px 1px 3px black;
 		margin: 15px 0px;
 	}
-	
+
 }
 
 @media screen and (max-width: 650px) {
-	
-	#SiteTitle a{	
+
+	#SiteTitle a{
 		display: none;
 	}
-	
+
 	#SiteTitleBar a {
-		font-family: 'Poiret One', cursive;
+		font-family: 'Alice', serif;
 	}
-	
+
 	#TitleSpacer {
 		display: none;
 	}
@@ -462,12 +456,12 @@ input:hover {
 		width: 100%;
 		height: 5px;
 	}
-	
+
 	#LeftDiv {
 		float: none;
 		width: 100%;
 	}
-	
+
 	option {
 		font-size: 24px;
 		padding: 7px;
@@ -477,12 +471,12 @@ input:hover {
 		width: 90%;
 		font-size: 24px;
 	}
-	
+
 	#RightDiv {
 		float: none;
-		width: 100%;	
+		width: 100%;
 	}
-	
+
 	input {
 		width: 90%;
 		padding: 7px 0px;
@@ -491,7 +485,7 @@ input:hover {
 
 	.Language {
 		width: 120px;
-		font-size: 24px;		
+		font-size: 24px;
 		float: left;
 	}
 
@@ -500,14 +494,14 @@ input:hover {
 		float: left;
 		font-size: 24px;
 	}
-	
+
 }
 
 @media screen and (max-width: 500px) {
-	
+
 	.Language {
 		width: 100px;
-		font-size: 20px;		
+		font-size: 20px;
 		float: left;
 	}
 
@@ -517,18 +511,12 @@ input:hover {
 		font-size: 20px;
 	}
 
-	
+
 }
 
 @media screen and (max-width: 330px) {
-	
-	
-	
-	
+
+
+
+
 }
-
-
-
-
-
-

@@ -1,0 +1,370 @@
+/*
+	font-family: 'Alice', serif;
+
+    font-family: 'Proza Libre', sans-serif;
+
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+	new blue: #5960d6;
+
+	new red: red;
+
+*/
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: white;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+h1 {
+    font-family: 'Alice', serif;
+    font-size: 11.5vh;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 3px 2px 3px black;
+}
+
+h2 {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 4vh;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+h3 {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 2vw;
+    font-weight: lighter;
+    line-height: 1.2;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, .4);
+    margin: 3vh 0px;
+}
+
+p {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.75vw;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, .6);
+    margin: 15px 0 25px 0;
+}
+
+#Header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+aside {
+    width: 25%;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+}
+
+article {
+    background-image: url(/../../Images/EiffelTower.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 73px center;
+    width: 75%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10vw 3vw 2vw 3vw;
+}
+
+#SiteTitle a {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: calc(25% - 2px);
+    font-family: 'Alice', serif;
+    font-size: 11.5vh;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow: 3px 2px 3px black;
+    line-height: 1.15;
+    text-decoration: none;
+    padding: 10px 0 2% 2.5%;
+    background: linear-gradient(180deg, #333 90%, transparent);
+    z-index: 50;
+}
+
+#TitleSpacer {
+    float: left;
+    background: #333;
+    width: 25%;
+    height: 100vh;
+}
+
+#InstrID {
+    margin-bottom: 5vh;
+}
+
+#AjaxOut {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#LeftDiv {
+    width: 50%;
+}
+
+#CategoryDrops {}
+
+optgroup,
+select,
+textarea {
+    font-family: 'Proza Libre', sans-serif;
+    color: white;
+    font-size: 2vw;
+    appearance: none;
+}
+
+option {
+    font-family: 'Proza Libre', sans-serif;
+    color: #2a2e53;
+    font-size: 2vh;
+    padding: 10px;
+    background-color: transparent;
+}
+
+#Categories,
+#Subcategories {
+    width: 85%;
+    background-color: transparent;
+    padding: 7px;
+    font-family: 'Proza Libre', sans-serif;
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: -2px -2px 3px rgba(255, 255, 255, .4), 3px 3px 10px rgba(0, 0, 0, .4) inset, -3px -3px 5px rgba(255, 255, 255, .4) inset, 3px 3px 5px rgba(0, 0, 0, .4);
+}
+
+.CategoryWrap {
+    position: relative;
+}
+
+.fa-angle-down:before {
+    content: '\f107';
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    color: #fff;
+    font-size: 1.75vw;
+    padding-right: 0.5em;
+    position: absolute;
+    top: 10px;
+    left: 76%;
+    pointer-events: none;
+}
+
+#RightDiv {
+    width: 50%;
+    padding-left: 5vw;
+}
+
+#FinalCategory {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 0;
+    line-height: 0;
+    color: white;
+    margin: 0;
+}
+
+input {
+    width: 95%;
+    padding: 7px 0px;
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    text-shadow: 5px 5px 11px rgb(46, 55, 69);
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: -2px -2px 3px rgba(255, 255, 255, .4), 3px 3px 10px rgba(0, 0, 0, .4) inset, -3px -3px 5px rgba(255, 255, 255, .4) inset, 3px 3px 5px rgba(0, 0, 0, .4);
+}
+
+input:hover {
+    color: #FF0000;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.Language {
+    float: left;
+    padding-right: 11px;
+}
+
+.Word {
+    float: left;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 2vw;
+    line-height: 1;
+    color: white;
+    font-weight: 100;
+    text-shadow: 1px 1px 3px black;
+    margin: 3vh 0px;
+}
+
+@media (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    select::-ms-expand {
+        display: none;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 651px) {
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    article {
+        background-position: top 43px center;
+    }
+    p {
+        font-size: 1.5vh;
+        line-height: 1.5;
+        letter-spacing: .25px;
+    }
+    p a {
+        font-size: 1.5vh;
+        font-weight: 200;
+        line-height: 1.5;
+    }
+    #NavButtonBar .Button {
+        border: .45vh solid transparent;
+    }
+    #NavButtonBar .Button.Red {
+        border-bottom: .45vh solid #f00;
+    }
+    #SiteTitle a {
+        font-size: 7vw;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 650px) {
+    nav.fixed-top {
+        width: 100%;
+        height: unset;
+        left: 0;
+        background-color: #333;
+    }
+    .navbar-toggler-right {
+        top: 4.85vw;
+        right: 13px;
+    }
+    #NavButtonBar .Button.Red {
+        border-bottom: .85vh solid transparent;
+    }
+    #NavButtonBar .Button a {
+        font-size: 5vw;
+        color: red;
+        padding: 7px;
+    }
+    #Hamburger {
+        display: inline-block;
+        color: white;
+        font-weight: 100;
+        font-size: 25px;
+        padding-top: 5px;
+        transform: rotate(90deg);
+    }
+    #SiteTitle {
+        display: none;
+    }
+    #SiteTitleBar {
+        margin-right: 0px;
+        padding-left: 4%;
+        padding-top: 1.3%;
+    }
+    #SiteTitleBar a {
+        display: inline-block;
+        font-family: 'Alice', serif;
+        font-size: 8.5vw;
+        line-height: 61px;
+        color: white;
+    }
+    h2 {
+        font-size: 3.75vh;
+    }
+    h3 {
+        font-size: 2vh;
+    }
+    p {
+        font-size: 2.7vh;
+    }
+    #Header {
+        flex-direction: column;
+        width: 100%;
+    }
+    aside {
+        display: none;
+    }
+    article {
+        background-position: top 43px center;
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        padding: 15vh 5vw 2vw 5vw;
+    }
+    #AjaxOut {
+        flex-direction: column;
+    }
+    #LeftDiv {
+        width: 100%;
+        padding: 0 5vw;
+    }
+    #Categories,
+    #Subcategories {
+        width: 100%;
+        padding: 7px;
+        font-size: 2.5vh;
+        background-color: rgba(46, 51, 91, .5);
+    }
+    .fa-angle-down:before {
+        font-size: 1.75vh;
+        top: 10px;
+        left: 92%;
+    }
+    #RightDiv {
+        width: 100%;
+        padding: 7vh 5vw;
+    }
+    input {
+        width: 100%;
+        padding: 7px 0px;
+        font-size: 2.5vh;
+        background-color: rgba(46, 51, 91, .5);
+    }
+    .Word {
+        font-size: 2vh;
+        line-height: .9;
+    }
+}

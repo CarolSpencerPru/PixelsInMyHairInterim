@@ -14,18 +14,15 @@
 }
 
 body {
-	background-color: #8d969e;
+	background-color: #333;
 	width: 100%;
 }
 
 .GalleryPageBackground {
-	position: fixed;
+	background: #333 !important;
 	width: 100%;
 	height: 100vh;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
+	overflow: hidden;
 }
 
 #MainWrapperRow {
@@ -33,21 +30,24 @@ body {
 }
 
 #SiteTitle a {
-	font-family: 'Poiret One', cursive;
+	font-family: 'Alice', sans-serif !important;
+	background: transparent !important;
 }
 
 h1 {
-	font-family: 'Yeseva One', cursive;
 	font-size: 50px;
 	font-weight: 100;
 	margin-bottom: 2vh;
 }
 
 p {
-	font-family: 'Poiret One', cursive;
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 	font-size: 26px;
 	color: white;
-/*	margin-bottom: 1vh;*/
+}
+
+#ButtonGallery.Button {
+	border-bottom: .85vh solid #f00;
 }
 
 #PeelOffSiteTitle {
@@ -55,6 +55,10 @@ p {
 	left: 0px;
 	width: 25%;
 	height: calc(100vh - 150px);
+}
+
+#ButtonGallery {
+
 }
 
 #MainContentArea {
@@ -90,7 +94,7 @@ p {
     height: calc(((100vh - 175px)/6) - 2vh);
     bottom: 0;
 	margin-bottom: 2vh;
-    background-color: rgba(17,35,50,.7);
+    /* padding-top: 10px; */
 }
 
 #Thumbnails {
@@ -99,23 +103,23 @@ p {
     width: 25%;
     top: 175px;
     bottom: 0px;
-	padding-left: 2vw;
+	padding-left: 1.75vw;
 }
 
 .GalleryThumbs {
 	height: calc(((100vh - 175px)/6) - 2vh);
     width: 9vw;
-    margin-right: 2.5vw;
+    margin-right: 2vw;
     margin-bottom: 2vh;
     float: left;
 }
 
 #Thumb1 {
-	
+
 }
 
 #Thumb2 {
-	
+
 }
 
 #Thumb3 {
@@ -187,7 +191,7 @@ p {
 	p {
 		font-size: 22px;
 	}
-	
+
 	#MainContentArea {
 		top: 135px;
 	}
@@ -203,11 +207,11 @@ p {
 	#Thumbnails {
 		top: 135px;
 	}
-	
+
 	.GalleryThumbs {
 	height: calc(((100vh - 135px)/6) - 2vh);
 }
-	
+
 }
 
 @media screen and (max-width:1750px) and (orientation: landscape) {
@@ -222,7 +226,7 @@ p {
 	p {
 	font-size: 17px;
 	}
-	
+
 }
 
 @media screen and (max-width:1400px) and (orientation: landscape) {
@@ -238,7 +242,7 @@ p {
 	p {
 		font-size: 14px;
 	}
-	
+
 	#MainContentArea {
 		top: 100px;
 	}
@@ -254,11 +258,11 @@ p {
 	#Thumbnails {
 		top: 100px;
 	}
-	
+
 	.GalleryThumbs {
 		height: calc(((100vh - 100px)/6) - 2vh);
 }
-		
+
 }
 
 @media screen and (max-width:992px) and (orientation: landscape) {
@@ -274,16 +278,16 @@ p {
 }
 
 @media screen and (max-width: 840px) and (orientation: landscape) {
-	
+
 	.MainText {
 		line-height: 1.0;
 		font-weight: 100;
 	}
-	
+
 	p {
 		font-size: 10.5px;
 	}
-	
+
 }
 
 @media screen and (max-width:650px) and (orientation: landscape) {
@@ -316,7 +320,7 @@ p {
 	#Thumbnails {
 		top: 75px;
 	}
-	
+
 	.GalleryThumbs {
 		height: calc(((100vh - 75px)/6) - 2vh);
 	}
@@ -324,7 +328,7 @@ p {
 }
 
 @media (min-width: 1550px) and (orientation: portrait) {
-	
+
 	#MainContentArea {
 		position: fixed;
 		width: 75vw;
@@ -332,7 +336,7 @@ p {
 		top: 7vh;
 		bottom: 69vh;
 	}
-	
+
 	#MainPhotoDiv {
 		position: absolute;
 		width: 100%;
@@ -363,7 +367,7 @@ p {
 		bottom: 0px;
 		padding: 0px;
 	}
-	
+
 	.GalleryThumbs {
 	    width: calc((100vw - 30vw)/4);
 		height: calc(.66*((100vw - 30vw)/4));
@@ -373,11 +377,11 @@ p {
 }
 
 @media (min-width: 820px) and (max-width: 1549px) and (orientation: portrait) {
-	
+
 	#SiteTitle a {
 		width: 100vw;
 	}
-	
+
 	#MainContentArea {
 		position: fixed;
 		top: 10vh;
@@ -385,7 +389,7 @@ p {
 		width: 100vw;
 		height: 60vh;
 	}
-	
+
 	#MainPhotoDiv {
 		position: absolute;
 		width: 100%;
@@ -416,7 +420,7 @@ p {
 		bottom: 0px;
 		padding: 0px;
 	}
-	
+
 	.GalleryThumbs {
 	    width: calc((100vw - 30vw)/3);
 		height: calc(.66*((100vw - 30vw)/3));
@@ -424,15 +428,15 @@ p {
 	}
 
 }
-    
+
 @media (min-width: 651px) and (max-width: 1050px) and (orientation: portrait) {
-	
+
 	#SiteTitle a {
 		width: 100vw;
 		top: 80px;
     	font-size: 60px;
 	}
-	
+
 	#MainContentArea {
 		position: fixed;
 		top: 150px;
@@ -440,7 +444,7 @@ p {
 		width: 100vw;
 		height: 60vh;
 	}
-	
+
 	#MainPhotoDiv {
 		position: absolute;
 		width: 100%;
@@ -471,7 +475,7 @@ p {
 		bottom: 0px;
 		padding: 0px;
 	}
-	
+
 	.GalleryThumbs {
 		width: calc((100vw - 20vw)/4);
 		height: calc(.66*((100vw - 20vw)/4));
@@ -504,7 +508,7 @@ p {
 	#ImageHolder {
 		display: none;
 	}
-	
+
 	.preImage {
 		position: relative;
 		display: block;
@@ -528,10 +532,9 @@ p {
 	#Thumbnails {
 		display: none;
 	}
-	
+
 	.GalleryThumbs {
 		display: none;
 }
 
 }
-
