@@ -434,6 +434,10 @@ footer h3 {
 	    background-size: contain;
 	}
 
+	.slide-inner.text-slider-stopped {
+	    display: none;
+	}
+
 	.page .page-wrap .content-wrapper, .single .page-wrap .content-wrapper {
 		padding: 20px;
 		margin: 0 40px 0 40px;
